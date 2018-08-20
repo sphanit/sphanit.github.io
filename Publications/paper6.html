@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>DiGrad</title>
+    <title>DiGrad-Humanoids</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -51,6 +51,9 @@
             <li class="nav-item">
               <a class="nav-link" href="../experience.html">Experience</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../projects.html">Projects</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -60,16 +63,15 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="mt-5">Learning Coordinated Tasks using Reinforcement Learning in Humanoids</h2>
+          <h2 class="mt-5">Learning Dual Arm Coordinated Reachability Tasks in a Humanoid Robot with Articulated Torso</h2>
         </div>
       </div>
       <div class="column">
-With the advent of artificial intelligence and machine learning, humanoid robots are made to learn a variety of skills which humans possess. One of fundamental skills which humans use in day-to-day activities is performing tasks with coordination between both the hands. In case of humanoids, learning such skills require optimal motion planning which includes avoiding collisions with the surroundings.
-In this paper, we propose a framework to learn coordinated tasks in cluttered environments based on DiGrad - A multi-task reinforcement learning algorithm for continuous action-spaces. Further, we propose an algorithm to smooth the joint space trajectories obtained by the proposed framework in order to reduce the noise instilled during training.
-The proposed framework was tested on a 27 degrees of freedom (DoF) humanoid with articulated torso for performing coordinated object-reaching task with both the hands in four different environments with varying levels of difficulty. It is observed that the humanoid is able to plan collision free trajectory in real-time. Simulation results also reveal the usefulness of the articulated torso for performing tasks which require coordination between both the arms.
+Performing dual arm coordinated (reachability) tasks in bipedal humanoid robots require complex planning strategies \cite{smith2012dual} and this complexity increases further, in case of humanoids with articulated torso.
+These complex strategies may not be suitable for online motion planning. This paper proposes a faster way to accomplish dual arm coordinated tasks using methodology based on Reinforcement Learning(RL). The contribution of this paper is twofold. Firstly, we propose DiGrad, a new RL framework for multi-task learning in manipulators. Secondly, we show how this framework can be adopted to learn dual arm coordination in a 27 degrees of freedom (DOF) humanoid robot with articulated spine. The proposed framework and methodology are evaluated in various environments and simulation results are presented. A comparative study of DiGrad with its parent algorithm in different settings is also presented.
 	        <br></br>
 	      <p align="center">
-	      <a href="../iros_2018.pdf">Download Full Paper</a> <br />
+	      <a href="../Learning Dual Arm Coordinated Reachability Tasks in a Humanoid Robot with Articulated Torso.pdf">Download Full Paper</a> <br />
 	      </p>
 	      <br></br>
 

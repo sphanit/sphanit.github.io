@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CV</title>
+    <title>Projects</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +23,17 @@
           padding-top: 56px;
         }
       }
+      table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
+td, th {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 4px;
+}
 
     </style>
 
@@ -38,10 +48,10 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-         <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-	      <a class="nav-link" href="projects.html">CV</a>
+            <li class="nav-item">
+	      <a class="nav-link" href="resume.html">CV</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="publications.html">Publications</a>
@@ -52,6 +62,9 @@
             <li class="nav-item">
               <a class="nav-link" href="experience.html">Experience</a>
             </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -60,18 +73,77 @@
     <!-- Page Content -->
     <div class="container">
       <div class="row">
-      	 <div class="col-lg-12 text-right">
-      	         <h1 class = "mt-1"> </h1>
-           <p align="right">
-             <a class="text-info" href="resume.pdf"> Download </a>
-           </p>
-          </div>
         <div class="col-lg-12 text-center">
-          <object data="resume.pdf" type="application/pdf" width="100%" height="600px"> 
-            <p>It appears you dont have a PDF plugin for this browser. You can <a href="resume.pdf">click here to
-               download the PDF file.</a></p>  
-          </object>
-         </div>
+          <h1 class="mt-5">Projects</h1>
+          <h5> Here are some of the projects I have done in Robotics and Machine Learning as part of course work.</h5>
+          </div>
+         <div class="col-lg-12 text-left">
+	  <table align = "center">
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+  <td><h1 class="mt-5"></h1></td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">Motion Transfer from Human to Humanoid</span></td>
+  </tr>
+  <tr>
+  <td>This project aims at transferring simple human motions onto a humanoid robot. Human motions are captured using 8 Bonita Vicon cameras and the trajectories are stored. These trajectories are then carefully mapped to a humanoid robot using analytical Inverse Kinematics based planning.</td>
+  </tr>
+  <tr>
+    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/QYhMjL4hJBQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></td>
+  <td><h1 class="mt-5"></h1></td>
+  </tr>
+   <tr>
+   <td><h1 class="mt-5"></h1></td>
+   </tr>
+  <tr>
+    <td><span style="font-weight:bold">Path planning and collision avoidance</span></td>
+  </tr>
+  <tr>
+  <td>Devised and implemented a methodology for path planning and collision avoidance of a differential drive wheeled robot for static as well as dynamic obstacles using RRT and velocity cones. This methodology takes future steps also into consideration while planning, unlike, traditional RRT based planners where only the present state is considered. </td>
+  </tr>
+  <tr>
+  <td><iframe width="560" height="315" src="https://www.youtube.com/embed/k8nAYwiB5RY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></td>
+  <td><h1 class="mt-5"></h1></td>
+  </tr>
+  <tr>
+   <td><h1 class="mt-5"></h1></td>
+   </tr>
+    <tr>
+    <td><span style="font-weight:bold">Finger print recognition using MKL-SVM</span></td>
+  </tr>
+  <tr>
+  <td>A method for finger print recognition is developed using Multi Kernel Learning Support Vector Machine as the base learner and different image processing techniques for feature extraction. The feature vector consisted of feature points called 'minutiae', the dimension which is variable. These dimensionality issues are addressed by proposing a constant vector representation using the given feature vector.</td>
+  </tr>
+  <tr>
+  <td><h1 class="mt-5"></h1></td>
+  </tr>
+    <tr>
+    <td><span style="font-weight:bold">Text to emotive speech synthesis</span></td>
+  </tr>
+  <tr>
+  <td>This project involved implemented an end to end text to speech synthesizer with a choice for emotion of the systhesized speech. Text to speech synthesis system is developed using Festival framework and CMU ARCTIC databases. System was then extended to synthesize speech in 5 different emotions by modifying different elements of speech using MATLAB.</td>
+  </tr>
+  <tr>
+  <td><h1 class="mt-5"></h1></td>
+  </tr>
+    <tr>
+    <td><span style="font-weight:bold">1-D Gantry Crane</span></td>
+  </tr>
+  <tr>
+  <td>Designed a 1-D gantry crane from scratch and implemented automated pick and place of metallic objects. Object detection is done using an IR beam and an electro-magnet then picks up the object. The crane then takes the object to the desired position (one end of the crane) and drops it. The whole automation and control is done using an Arduino.</td>
+  </tr>
+  <tr>
+  <td><iframe width="560" height="315" src="https://www.youtube.com/embed/S2wgSF_j8bc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></td>
+  </tr>
+   <td><h1 class="mt-5"></h1></td>
+</table>
+
         </div>
       </div>
     </div>
