@@ -1,6 +1,9 @@
-name: Hank Quinlan, Horrible Cop
+name: PhaniTeja
+email: thedecipher.sp@gmail.com
+github_username: sphanit
+
 markdown: kramdown
-permalink: /blog/:title.html
+permalink: /blog/:title
 
 theme: jekyll-theme-tactile
 disqus:
