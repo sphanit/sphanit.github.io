@@ -3,4 +3,6 @@ markdown: kramdown
 permalink: /blog/:title.html
 
 theme: jekyll-theme-tactile
+disqus:
+  shortname: https-sphanit-github-io-blog-test
 # other options
