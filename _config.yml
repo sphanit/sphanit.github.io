@@ -3,3 +3,4 @@ markdown: kramdown
 permalink: /blog/:title.html
 
 theme: jekyll-theme-tactile
+# other options
