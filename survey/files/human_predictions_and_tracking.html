@@ -1,0 +1,2034 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Zotero Report</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9Cg==">
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K">
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg==">
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_EUW2QTM3" class="item journalArticle">
+			<h2>A Real-Time Deep Learning Pedestrian Detector for Robot Navigation</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>David Ribeiro</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Andre Mateus</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Pedro Miraldo</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jacinto C. Nascimento</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://arxiv.org/abs/1607.04436">http://arxiv.org/abs/1607.04436</a></td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>arXiv:1607.04436 [cs]</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2016-07-15</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>arXiv: 1607.04436</td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/2/2019, 4:49:20 PM</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>arXiv.org</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>A real-time Deep Learning based method for Pedestrian 
+Detection (PD) is applied to the Human-Aware robot navigation problem. 
+The pedestrian detector combines the Aggregate Channel Features (ACF) 
+detector with a deep Convolutional Neural Network (CNN) in order to 
+obtain fast and accurate performance. Our solution is ﬁrstly evaluated 
+using a set of real images taken from onboard and offboard cameras and, 
+then, it is validated in a typical robot navigation environment with 
+pedestrians (two distinct experiments are conducted). The results on 
+both tests show that our pedestrian detector is robust and fast enough 
+to be used on robot navigation applications.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer Science - Computer Vision and Pattern Recognition</li>
+					<li>Computer Science - Robotics</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_933IE55I">Ribeiro et al. - 2016 - A Real-Time Deep Learning Pedestrian Detector for .pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_3AY365ZA" class="item bookSection">
+			<h2>Chapter 9 - Learning to Predict Human Behavior in Crowded Scenes</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book Section</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alexandre Alahi</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Vignesh Ramanathan</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Kratarth Goel</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alexandre Robicquet</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Amir A. Sadeghian</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Li Fei-Fei</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Silvio Savarese</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Vittorio Murino</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Marco Cristani</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Shishir Shah</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Silvio Savarese</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://www.sciencedirect.com/science/article/pii/B9780128092767000114">http://www.sciencedirect.com/science/article/pii/B9780128092767000114</a></td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Academic Press</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>183-207</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-0-12-809276-7</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>January 1, 2017</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>DOI: 10.1016/B978-0-12-809276-7.00011-4</td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>10/29/2019, 2:16:13 PM</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>ScienceDirect</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Pedestrians follow different trajectories to avoid obstacles 
+and accommodate fellow pedestrians. Any autonomous vehicle navigating 
+such a scene should be able to foresee the future positions of 
+pedestrians and accordingly adjust its path to avoid collisions. This 
+problem of trajectory prediction can be viewed as a sequence generation 
+task, where we are interested in predicting the future trajectory of 
+people based on their past positions. Following the recent success of 
+Recurrent Neural Network (RNN) models for sequence prediction tasks, we 
+propose an LSTM model which can learn general human movement and predict
+ their future trajectories. This is in contrast to traditional 
+approaches which use hand-crafted functions such as Social Forces. We 
+demonstrate the performance of our method on several public datasets. 
+Our model outperforms state-of-the-art methods on some of these 
+datasets. We also analyze the trajectories predicted by our model to 
+demonstrate the motion behavior learned by our model. Moreover, we 
+introduce a new characterization that describes the “social sensitivity”
+ at which two targets interact. We use this characterization to define 
+“navigation styles” and improve both forecasting models and 
+state-of-the-art multi-target tracking – whereby the learned forecasting
+ models help the data association step.</td>
+					</tr>
+					<tr>
+					<th>Book Title</th>
+						<td>Group and Crowd Behavior for Computer Vision</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Human interaction</li>
+					<li>Social forces</li>
+					<li>Social LSTM</li>
+					<li>Social sensitivity</li>
+					<li>Trajectory prediction</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_T6JCWRH8">ScienceDirect Snapshot					</li>
+					<li id="item_PXCFKQ89">Submitted Version					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_AKQ8XAWT" class="item conferencePaper">
+			<h2>Context-Aware Trajectory Prediction</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Federico Bartoli</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Giuseppe Lisanti</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Lamberto Ballan</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alberto Del Bimbo</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>1941-1946</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>August 2018</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>ISSN: 1051-4651</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICPR.2018.8545447">10.1109/ICPR.2018.8545447</a></td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2018 24th International Conference on Pattern Recognition (ICPR)</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Human motion and behaviour in crowded spaces is influenced by 
+several factors, such as the dynamics of other moving agents in the 
+scene, as well as the static elements that might be perceived as points 
+of attraction or obstacles. In this work, we present a new model for 
+human trajectory prediction which is able to take advantage of both 
+human-human and human-space interactions. The future trajectory of 
+humans, are generated by observing their past positions and interactions
+ with the surroundings. To this end, we propose a “context-aware” 
+recurrent neural network LSTM model, which can learn and predict human 
+motion in crowded spaces such as a sidewalk, a museum or a shopping 
+mall. We evaluate our model on a public pedestrian datasets, and we 
+contribute a new challenging dataset that collects videos of humans that
+ navigate in a (real) crowded space such as a big museum. Results show 
+that our approach can predict human trajectories better when compared to
+ previous state-of-the-art forecasting models.</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2018 24th International Conference on Pattern Recognition (ICPR)</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Cameras</li>
+					<li>Context modeling</li>
+					<li>context-aware recurrent neural network LSTM model</li>
+					<li>context-aware trajectory prediction</li>
+					<li>human motion learning</li>
+					<li>human trajectory prediction</li>
+					<li>human-human interactions</li>
+					<li>human-space interactions</li>
+					<li>image motion analysis</li>
+					<li>learning (artificial intelligence)</li>
+					<li>Legged locomotion</li>
+					<li>Logic gates</li>
+					<li>pedestrians</li>
+					<li>prediction theory</li>
+					<li>Predictive models</li>
+					<li>public pedestrian datasets</li>
+					<li>recurrent neural nets</li>
+					<li>Training</li>
+					<li>Trajectory</li>
+					<li>ubiquitous computing</li>
+					<li>video signal processing</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_B6942QX9">IEEE Xplore Abstract Record					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_EKS2MFQ8" class="item conferencePaper">
+			<h2>Deep Learning-based Multiple Objects Detection and Tracking System for Socially Aware Mobile Robot Navigation Framework</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Do Nam Thang</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Lan Anh Nguyen</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Pham Trung Dung</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Truong Dang Khoa</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Nguyen Huu Son</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Nguyen Tran Hiep</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Pham Van Nguyen</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Vu Duc Truong</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Dinh Hong Toan</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Nguyen Manh Hung</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Trung-Dung Ngo</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Xuan-Tung Truong</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>436-441</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>November 2018</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/NICS.2018.8606878">10.1109/NICS.2018.8606878</a></td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2018 5th NAFOSTED Conference on Information and Computer Science (NICS)</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Multiple objects (including humans) detection and tracking 
+system plays an essential role in socially aware mobile robot navigation
+ framework. Because, it provides an important input for the remaining 
+modules of the framework. In this paper, we propose an efficient 
+multiple objects detection and tracking system for mobile service robots
+ in dynamic social environments using deep learning techniques. The 
+proposed system consists of two steps: (1) multiple objects detection, 
+and (2) multiple objects tracking. In the first step, the RGB 
+image-based multiple objects detection is made use of to detect objects 
+in the mobile robot's vicinity using a convolutional neural network. In 
+the second stage of system, the detected objects are tracked using a 
+deep simple online and realtime tracking technique. The experimental 
+results indicate that, the proposed system is capable of detecting and 
+tracking multiple objects including humans, providing significant 
+information for the socially aware mobile robot navigation framework.</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2018 5th NAFOSTED Conference on Information and Computer Science (NICS)</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>control engineering computing</li>
+					<li>convolutional neural nets</li>
+					<li>convolutional neural network</li>
+					<li>deep learning techniques</li>
+					<li>deep simple online tracking technique</li>
+					<li>image colour analysis</li>
+					<li>learning (artificial intelligence)</li>
+					<li>mobile robots</li>
+					<li>Mobile robots</li>
+					<li>multiple objects tracking</li>
+					<li>Navigation</li>
+					<li>object detection</li>
+					<li>Object detection</li>
+					<li>object tracking</li>
+					<li>path planning</li>
+					<li>RGB image-based multiple objects detection</li>
+					<li>Robot sensing systems</li>
+					<li>Safety</li>
+					<li>service robots</li>
+					<li>Service robots</li>
+					<li>socially aware mobile robot navigation framework</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_WE989QCR">IEEE Xplore Abstract Record					</li>
+					<li id="item_YA33KUU3">Thang et al. - 2018 - Deep Learning-based Multiple Objects Detection and.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_UW8G5FTG" class="item journalArticle">
+			<h2>Efficient and Robust Pedestrian Detection using Deep Learning for Human-Aware Navigation</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Andre Mateus</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>David Ribeiro</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Pedro Miraldo</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jacinto C. Nascimento</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://arxiv.org/abs/1607.04441">http://arxiv.org/abs/1607.04441</a></td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>arXiv:1607.04441 [cs]</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2016-07-15</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>arXiv: 1607.04441</td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/2/2019, 4:49:23 PM</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>arXiv.org</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>This paper addresses the problem of Human-Aware Navigation 
+(HAN), using multi camera sensors to implement a vision-based person 
+tracking system. The main contributions of this paper are as follows: a 
+novel and efﬁcient Deep Learning person detection and a standardization 
+of human-aware constraints. In the ﬁrst stage of the approach, we 
+propose to cascade the Aggregate Channel Features (ACF) detector with a 
+deep Convolutional Neural Network (CNN) to achieve fast and accurate 
+Pedestrian Detection (PD). Regarding the human awareness (that can be 
+deﬁned as constraints associated with the robot’s motion), we use a 
+mixture of asymmetric Gaussian functions, to deﬁne the cost functions 
+associated to each constraint. Both methods proposed herein are 
+evaluated individually to measure the impact of each of the components. 
+The ﬁnal solution (including both the proposed pedestrian detection and 
+the human-aware constraints) is tested in a typical domestic indoor 
+scenario, in four distinct experiments. The results show that the robot 
+is able to cope with human-aware constraints, deﬁned after common 
+proxemics and social rules.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer Science - Computer Vision and Pattern Recognition</li>
+					<li>Computer Science - Robotics</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_Y4KRLSNF">
+<div><p>Comment: Accepted in Robotics and Autonomous Systems</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_NML9QY9J">Mateus et al. - 2016 - Efficient and Robust Pedestrian Detection using De.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_XKZC8JPE" class="item journalArticle">
+			<h2>Forecasting Social Navigation in Crowded Complex Scenes</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alexandre Robicquet</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alexandre Alahi</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Amir Sadeghian</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Bryan Anenberg</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>John Doherty</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Eli Wu</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Silvio Savarese</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://arxiv.org/abs/1601.00998">http://arxiv.org/abs/1601.00998</a></td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>arXiv:1601.00998 [cs]</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2016-01-05</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>arXiv: 1601.00998</td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/4/2019, 1:02:59 PM</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>arXiv.org</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>When humans navigate a crowed space such as a university 
+campus or the sidewalks of a busy street, they follow common sense rules
+ based on social etiquette. In this paper, we argue that in order to 
+enable the design of new algorithms that can take fully advantage of 
+these rules to better solve tasks such as target tracking or trajectory 
+forecasting, we need to have access to better data in the first place. 
+To that end, we contribute the very first large scale dataset (to the 
+best of our knowledge) that collects images and videos of various types 
+of targets (not just pedestrians, but also bikers, skateboarders, cars, 
+buses, golf carts) that navigate in a real-world outdoor environment 
+such as a university campus. We present an extensive evaluation where 
+different methods for trajectory forecasting are evaluated and compared.
+ Moreover, we present a new algorithm for trajectory prediction that 
+exploits the complexity of our new dataset and allows to: i) incorporate
+ inter-class interactions into trajectory prediction models (e.g, 
+pedestrian vs bike) as opposed to just intra-class interactions (e.g., 
+pedestrian vs pedestrian); ii) model the degree to which the social 
+forces are regulating an interaction. We call the latter "social 
+sensitivity"and it captures the sensitivity to which a target is 
+responding to a certain interaction. An extensive experimental 
+evaluation demonstrates the effectiveness of our novel approach.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer Science - Computer Vision and Pattern Recognition</li>
+					<li>Computer Science - Robotics</li>
+					<li>Computer Science - Social and Information Networks</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_CS5MLZUK">arXiv Fulltext PDF					</li>
+					<li id="item_FBJKZPLJ">arXiv.org Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_L6CVR2ID" class="item journalArticle">
+			<h2>Forecasting Trajectory and Behavior of Road-Agents Using Spectral Clustering in Graph-LSTMs</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Rohan Chandra</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Tianrui Guan</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Srujan Panuganti</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Trisha Mittal</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Uttaran Bhattacharya</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Aniket Bera</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Dinesh Manocha</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>8</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>We present a novel approach for trafﬁc forecasting in urban 
+trafﬁc scenarios using a combination of spectral graph analysis and deep
+ learning. We predict both the lowlevel information (future 
+trajectories) as well as the high-level information (road-agent 
+behavior) from the extracted trajectory of each road-agent. Our 
+formulation represents the proximity between the road agents using a 
+weighted dynamic geometric graph (DGG). We use a two-stream graph-LSTM 
+network to perform trafﬁc forecasting using these weighted DGGs. The 
+ﬁrst stream predicts the spatial coordinates of road-agents, while the 
+second stream predicts whether a road-agent is going to exhibit 
+overspeeding, underspeeding, or neutral behavior by modeling spatial 
+interactions between road-agents. Additionally, we propose a new 
+regularization algorithm based on spectral clustering to reduce the 
+error margin in long-term prediction (3-5 seconds) and improve the 
+accuracy of the predicted trajectories. Moreover, we prove a theoretical
+ upper bound on the regularized prediction error. We evaluate our 
+approach on the Argoverse, Lyft, Apolloscape, and NGSIM datasets and 
+highlight the beneﬁts over prior trajectory prediction methods. In 
+practice, our approach reduces the average prediction error by 
+approximately 75% over prior algorithms and achieves a weighted average 
+accuracy of 91.2% for behavior prediction. Additionally, our spectral 
+regularization improves long-term prediction by up to 70%.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/14/2021, 11:53:13 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/14/2021, 11:53:13 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_9XFT4LFT">Chandra et al. - Forecasting Trajectory and Behavior of Road-Agents.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_B7F25GTN" class="item conferencePaper">
+			<h2>Group LSTM: Group Trajectory Prediction in Crowded Scenarios</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Niccolo Bisagno</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Bo Zhang</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Nicola Conci</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://openaccess.thecvf.com/content_eccv_2018_workshops/w15/html/Bisagno_Group_LSTM_Group_Trajectory_Prediction_in_Crowded_Scenarios_ECCVW_2018_paper.html">http://openaccess.thecvf.com/content_eccv_2018_workshops/w15/html/Bisagno_Group_LSTM_Group_Trajectory_Prediction_in_Crowded_Scenarios_ECCVW_2018_paper.html</a></td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>0-0</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2018</td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>10/29/2019, 2:16:04 PM</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>openaccess.thecvf.com</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>Proceedings of the European Conference on Computer Vision (ECCV)</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Group LSTM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_ZHUVXN2G">Full Text PDF					</li>
+					<li id="item_S5GTF5LB">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_GNKWUWT3" class="item journalArticle">
+			<h2>Human trajectory prediction for automatic guided vehicle with recurrent neural network</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Chao Song</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Zhixian Chen</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Xiaozhi Qi</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Baoliang Zhao</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Ying Hu</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Shoubin Liu</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jianwei Zhang</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>2018</td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>16</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>1574-1578</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>The Journal of Engineering</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>2051-3305</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2018</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1049/joe.2018.8264">10.1049/joe.2018.8264</a></td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The accurate prediction of the pedestrian trajectory is 
+necessary to endow automatic guided vehicle with the capabilities to 
+adjust velocity and path dynamically for the navigation in real 
+pedestrian scenes. For this purpose, this study presents a social 
+conscious prediction model considering two main factors that affect the 
+pedestrians’ walking in the crowd – relative distance and moving 
+direction. To form an effective model, the authors’ conscious pooling 
+layer is added to the Long Shot Term Memory network (LTSM) model to 
+build the relationship between pedestrians, learning the current 
+position m and movement trend. The experiments are conducted to compare 
+the proposed model with the previous state-of-the-art model on several 
+public datasets. The experimental results show that the proposed model 
+predicts pedestrian trajectories more accurately.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>automatic guided vehicle</li>
+					<li>automatic guided vehicles</li>
+					<li>control engineering computing</li>
+					<li>human trajectory prediction</li>
+					<li>learning (artificial intelligence)</li>
+					<li>LSTM model</li>
+					<li>pedestrian scenes</li>
+					<li>pedestrian trajectory</li>
+					<li>pedestrians</li>
+					<li>recurrent neural nets</li>
+					<li>recurrent neural network</li>
+					<li>social conscious prediction model</li>
+					<li>trajectory control</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_6LYUJPLJ">IEEE Xplore Abstract Record					</li>
+					<li id="item_LZTA582H">IEEE Xplore Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_EY5VJ95S" class="item journalArticle">
+			<h2>Human Trajectory Prediction using Spatially aware Deep Attention Models</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Daksh Varshneya</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>G. Srinivasaraghavan</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://arxiv.org/abs/1705.09436">http://arxiv.org/abs/1705.09436</a></td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>arXiv:1705.09436 [cs]</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2017-05-26</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>arXiv: 1705.09436</td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>10/29/2019, 2:15:56 PM</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>arXiv.org</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Trajectory Prediction of dynamic objects is a widely studied 
+topic in the field of artificial intelligence. Thanks to a large number 
+of applications like predicting abnormal events, navigation system for 
+the blind, etc. there have been many approaches to attempt learning 
+patterns of motion directly from data using a wide variety of techniques
+ ranging from hand-crafted features to sophisticated deep learning 
+models for unsupervised feature learning. All these approaches have been
+ limited by problems like inefficient features in the case of hand 
+crafted features, large error propagation across the predicted 
+trajectory and no information of static artefacts around the dynamic 
+moving objects. We propose an end to end deep learning model to learn 
+the motion patterns of humans using different navigational modes 
+directly from data using the much popular sequence to sequence model 
+coupled with a soft attention mechanism. We also propose a novel 
+approach to model the static artefacts in a scene and using these to 
+predict the dynamic trajectories. The proposed method, tested on 
+trajectories of pedestrians, consistently outperforms previously 
+proposed state of the art approaches on a variety of large scale data 
+sets. We also show how our architecture can be naturally extended to 
+handle multiple modes of movement (say pedestrians, skaters, bikers and 
+buses) simultaneously.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer Science - Artificial Intelligence</li>
+					<li>Computer Science - Machine Learning</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_267D6DVQ">
+<p class="plaintext">Comment: 10 pages, 5 figures, Submitted to 31st Conference on Neural Information Processing Systems (NIPS 2017)</p>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_ENAVURK3">arXiv Fulltext PDF					</li>
+					<li id="item_W655DACR">arXiv.org Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_BRC657H9" class="item journalArticle">
+			<h2>Probabilistic Crowd GAN: Multimodal Pedestrian Trajectory Prediction Using a Graph Vehicle-Pedestrian Attention Network</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Stuart Eiffert</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Kunming Li</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Mao Shan</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Stewart Worrall</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Salah Sukkarieh</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Eduardo Nebot</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://ieeexplore.ieee.org/document/9123560/">https://ieeexplore.ieee.org/document/9123560/</a></td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>5</td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>4</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>5026-5033</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>IEEE Robotics and Automation Letters</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>2377-3766, 2377-3774</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>10/2020</td>
+					</tr>
+					<tr>
+					<th>Journal Abbr</th>
+						<td>IEEE Robot. Autom. Lett.</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/LRA.2020.3004324">10.1109/LRA.2020.3004324</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>1/14/2021, 11:53:00 AM</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Understanding and predicting the intention of pedestrians is 
+essential to enable autonomous vehicles and mobile robots to navigate 
+crowds. This problem becomes increasingly complex when we consider the 
+uncertainty and multimodality of pedestrian motion, as well as the 
+implicit interactions between members of a crowd, including any response
+ to a vehicle. Our approach, Probabilistic Crowd GAN, extends recent 
+work in trajectory prediction, combining Recurrent Neural Networks 
+(RNNs) with Mixture Density Networks (MDNs) to output probabilistic 
+multimodal predictions, from which likely modal paths are found and used
+ for adversarial training. We also propose the use of Graph 
+Vehicle-Pedestrian Attention Network (GVAT), which models social 
+interactions and allows input of a shared vehicle feature, showing that 
+inclusion of this module leads to improved trajectory prediction both 
+with and without the presence of a vehicle. Through evaluation on 
+various datasets, we demonstrate improvements on the existing state of 
+the art methods for trajectory prediction and illustrate how the true 
+multimodal and uncertain nature of crowd interactions can be directly 
+modelled.</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Probabilistic Crowd GAN</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/14/2021, 11:53:00 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/14/2021, 11:53:01 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_LFW6DVYY">Eiffert et al. - 2020 - Probabilistic Crowd GAN Multimodal Pedestrian Tra.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_3QJSDUX5" class="item journalArticle">
+			<h2>Risk-Sensitive Sequential Action Control with Multi-Modal Human Trajectory Forecasting for Safe Crowd-Robot Interaction</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Haruki Nishimura</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Boris Ivanovic</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Adrien Gaidon</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Marco Pavone</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Mac Schwager</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>8</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>This paper presents a novel online framework for safe 
+crowd-robot interaction based on risk-sensitive stochastic optimal 
+control, wherein the risk is modeled by the entropic risk measure. The 
+sampling-based model predictive control relies on mode insertion 
+gradient optimization for this risk measure as well as Trajectron++, a 
+state-of-the-art generative model that produces multimodal probabilistic
+ trajectory forecasts for multiple interacting agents. Our modular 
+approach decouples the crowd-robot interaction into learning-based 
+prediction and model-based control, which is advantageous compared to 
+endto-end policy learning methods in that it allows the robot’s desired 
+behavior to be speciﬁed at run time. In particular, we show that the 
+robot exhibits diverse interaction behavior by varying the risk 
+sensitivity parameter. A simulation study and a real-world experiment 
+show that the proposed online framework can accomplish safe and efﬁcient
+ navigation while avoiding collisions with more than 50 humans in the 
+scene.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/14/2021, 11:51:03 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/14/2021, 11:51:03 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_IA32EEJC">Nishimura et al. - Risk-Sensitive Sequential Action Control with Mult.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_WFJF3DGB" class="item journalArticle">
+			<h2>Robust Pedestrian Tracking in Crowd Scenarios Using an Adaptive GMM-Based Framework</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Shuyang Zhang</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Di Wang</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Fulong Ma</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Chao Qin</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Zhengyong Chen</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Ming Liu</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>7</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>In this paper, we address the issue of pedestrian tracking in 
+crowd scenarios. People in close social relationships tend to act as a 
+group which is a great challenge to individually discriminate and track 
+pedestrians on a LiDAR system. In this paper, we integrally model groups
+ of people and track them in a recursive framework based on Gaussian 
+Mixture Model (GMM). The model is optimized by an extended 
+ExpectationMaximization (EM) algorithm which can adaptively vary the 
+number of mixture components over scans. Experimental results both 
+qualitatively and quantitatively indicate the reliability and accuracy 
+of our tracker in populated scenarios.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/14/2021, 11:54:32 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/14/2021, 11:54:33 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_72TS2K4Z">Zhang et al. - Robust Pedestrian Tracking in Crowd Scenarios Usin.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_QS4K6WLR" class="item journalArticle">
+			<h2>Scene-LSTM: A Model for Human Trajectory Prediction</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Huynh Manh</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Gita Alaghband</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://arxiv.org/abs/1808.04018">http://arxiv.org/abs/1808.04018</a></td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>arXiv:1808.04018 [cs]</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2019-04-15</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>arXiv: 1808.04018</td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>10/29/2019, 2:16:25 PM</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>arXiv.org</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>We develop a human movement trajectory prediction system that 
+incorporates the scene information (Scene-LSTM) as well as human 
+movement trajectories (Pedestrian movement LSTM) in the prediction 
+process within static crowded scenes. We superimpose a two-level grid 
+structure (scene is divided into grid cells each modeled by a 
+scene-LSTM, which are further divided into smaller sub-grids for finer 
+spatial granularity) and explore common human trajectories occurring in 
+the grid cell (e.g., making a right or left turn onto sidewalks coming 
+out of an alley; or standing still at bus/train stops). Two coupled LSTM
+ networks, Pedestrian movement LSTMs (one per target) and the 
+corresponding Scene-LSTMs (one per grid-cell) are trained simultaneously
+ to predict the next movements. We show that such common path 
+information greatly influences prediction of future movement. We further
+ design a scene data filter that holds important non-linear movement 
+information. The scene data filter allows us to select the relevant 
+parts of the information from the grid cell's memory relative to a 
+target's state. We evaluate and compare two versions of our method with 
+the Linear and several existing LSTM-based methods on five crowded video
+ sequences from the UCY [1] and ETH [2] datasets. The results show that 
+our method reduces the location displacement errors compared to related 
+methods and specifically about 80% reduction compared to social 
+interaction methods.</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Scene-LSTM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer Science - Computer Vision and Pattern Recognition</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_UQJ5A4C4">
+<div><p>Comment: 9 pages, 5 figures</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_H9UV9FK3">arXiv Fulltext PDF					</li>
+					<li id="item_VKNGVALN">arXiv.org Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_JMI99BSC" class="item journalArticle">
+			<h2>Social and Scene-Aware Trajectory Prediction in Crowded Spaces</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Matteo Lisotto</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Pasquale Coscia</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Lamberto Ballan</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>8</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Mimicking human ability to forecast future positions or 
+interpret complex interactions in urban scenarios, such as streets, 
+shopping malls or squares, is essential to develop socially compliant 
+robots or self-driving cars. Autonomous systems may gain advantage on 
+anticipating human motion to avoid collisions or to naturally behave 
+alongside people. To foresee plausible trajectories, we construct an 
+LSTM (long short-term memory)-based model considering three fundamental 
+factors: people interactions, past observations in terms of previously 
+crossed areas and semantics of surrounding space. Our model encompasses 
+several pooling mechanisms to join the above elements deﬁning multiple 
+tensors, namely social, navigation and semantic tensors. The network is 
+tested in unstructured environments where complex paths emerge according
+ to both internal (intentions) and external (other people, not 
+accessible areas) motivations. As demonstrated, modeling paths unaware 
+of social interactions or context information, is insufﬁcient to 
+correctly predict future positions. Experimental results corroborate the
+ effectiveness of the proposed framework in comparison to LSTM-based 
+models for human path prediction.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/12/2019, 4:53:31 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/12/2019, 4:53:31 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_8N4MC4AN">Lisotto et al. - Social and Scene-Aware Trajectory Prediction in Cr.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_Z74VYL3M" class="item conferencePaper">
+			<h2>Social Attention: Modeling Attention in Human Crowds</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Anirudh Vemula</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Katharina Muelling</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jean Oh</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>4601-4607</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>May 2018</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>ISSN: 2577-087X</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICRA.2018.8460504">10.1109/ICRA.2018.8460504</a></td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2018 IEEE International Conference on Robotics and Automation (ICRA)</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Robots that navigate through human crowds need to be able to 
+plan safe, efficient, and human predictable trajectories. This is a 
+particularly challenging problem as it requires the robot to predict 
+future human trajectories within a crowd where everyone implicitly 
+cooperates with each other to avoid collisions. Previous approaches to 
+human trajectory prediction have modeled the interactions between humans
+ as a function of proximity. However, that is not necessarily true as 
+some people in our immediate vicinity moving in the same direction might
+ not be as important as other people that are further away, but that 
+might collide with us in the future. In this work, we propose Social 
+Attention, a novel trajectory prediction model that captures the 
+relative importance of each person when navigating in the crowd, 
+irrespective of their proximity. We demonstrate the performance of our 
+method against a state-of-the-art approach on two publicly available 
+crowd datasets and analyze the trained attention model to gain a better 
+understanding of which surrounding agents humans attend to, when 
+navigating in a crowd.</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2018 IEEE International Conference on Robotics and Automation (ICRA)</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Social Attention</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>collision avoidance</li>
+					<li>Collision avoidance</li>
+					<li>Dynamics</li>
+					<li>human crowds</li>
+					<li>human predictable trajectories</li>
+					<li>human trajectory prediction</li>
+					<li>learning (artificial intelligence)</li>
+					<li>mobile robots</li>
+					<li>Navigation</li>
+					<li>path planning</li>
+					<li>Predictive models</li>
+					<li>publicly available crowd datasets</li>
+					<li>robots</li>
+					<li>Robots</li>
+					<li>Social Attention</li>
+					<li>Task analysis</li>
+					<li>trained attention model</li>
+					<li>Trajectory</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_6KQMBLFL">IEEE Xplore Abstract Record					</li>
+					<li id="item_GZLJLWV9">Submitted Version					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_XJPYZRWE" class="item conferencePaper">
+			<h2>Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Agrim Gupta</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Justin Johnson</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Li Fei-Fei</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Silvio Savarese</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alexandre Alahi</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://ieeexplore.ieee.org/document/8578338/">https://ieeexplore.ieee.org/document/8578338/</a></td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Salt Lake City, UT</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>IEEE</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>2255-2264</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-5386-6420-9</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>6/2018</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/CVPR.2018.00240">10.1109/CVPR.2018.00240</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>10/29/2019, 2:12:32 PM</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Understanding human motion behavior is critical for autonomous
+ moving platforms (like self-driving cars and social robots) if they are
+ to navigate human-centric environments. This is challenging because 
+human motion is inherently multimodal: given a history of human motion 
+paths, there are many socially plausible ways that people could move in 
+the future. We tackle this problem by combining tools from sequence 
+prediction and generative adversarial networks: a recurrent 
+sequence-to-sequence model observes motion histories and predicts future
+ behavior, using a novel pooling mechanism to aggregate information 
+across people. We predict socially plausible futures by training 
+adversarially against a recurrent discriminator, and encourage diverse 
+predictions with a novel variety loss. Through experiments on several 
+datasets we demonstrate that our approach outperforms prior work in 
+terms of accuracy, variety, collision avoidance, and computational 
+complexity.</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Social GAN</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_T3AUG45R">Gupta et al. - 2018 - Social GAN Socially Acceptable Trajectories with .pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_CBFZ8BEG" class="item conferencePaper">
+			<h2>Social LSTM: Human Trajectory Prediction in Crowded Spaces</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alexandre Alahi</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Kratarth Goel</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Vignesh Ramanathan</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alexandre Robicquet</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Li Fei-Fei</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Silvio Savarese</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://ieeexplore.ieee.org/document/7780479/">http://ieeexplore.ieee.org/document/7780479/</a></td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Las Vegas, NV, USA</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>IEEE</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>961-971</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-4673-8851-1</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>6/2016</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/CVPR.2016.110">10.1109/CVPR.2016.110</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>10/29/2019, 10:57:34 AM</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Pedestrians follow different trajectories to avoid obstacles 
+and accommodate fellow pedestrians. Any autonomous vehicle navigating 
+such a scene should be able to foresee the future positions of 
+pedestrians and accordingly adjust its path to avoid collisions. This 
+problem of trajectory prediction can be viewed as a sequence generation 
+task, where we are interested in predicting the future trajectory of 
+people based on their past positions. Following the recent success of 
+Recurrent Neural Network (RNN) models for sequence prediction tasks, we 
+propose an LSTM model which can learn general human movement and predict
+ their future trajectories. This is in contrast to traditional 
+approaches which use hand-crafted functions such as Social forces. We 
+demonstrate the performance of our method on several public datasets. 
+Our model outperforms state-of-the-art methods on some of these datasets
+ . We also analyze the trajectories predicted by our model to 
+demonstrate the motion behaviour learned by our model.</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Social LSTM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_4PS5JGPI">Alahi et al. - 2016 - Social LSTM Human Trajectory Prediction in Crowde.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_DWZXVZAQ" class="item conferencePaper">
+			<h2>Understanding Human Behaviors in Crowds by Imitating the Decision-Making Process</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Haosheng Zou</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Hang Su</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Shihong Song</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jun Zhu</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17012">https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17012</a></td>
+					</tr>
+					<tr>
+					<th>Rights</th>
+						<td>Authors who publish a paper in this conference agree to the 
+following terms:   Author(s) agree to transfer their copyrights in their
+ article/paper to the Association for the Advancement of Artificial 
+Intelligence (AAAI), in order to deal with future requests for reprints,
+ translations, anthologies, reproductions, excerpts, and other 
+publications. This grant will include, without limitation, the entire 
+copyright in the article/paper in all countries of the world, including 
+all renewals, extensions, and reversions thereof, whether such rights 
+current exist or hereafter come into effect, and also the exclusive 
+right to create electronic versions of the article/paper, to the extent 
+that such right is not subsumed under copyright.  The author(s) warrants
+ that they are the sole author and owner of the copyright in the above 
+article/paper, except for those portions shown to be in quotations; that
+ the article/paper is original throughout; and that the undersigned 
+right to make the grants set forth above is complete and unencumbered.  
+The author(s) agree that if anyone brings any claim or action alleging 
+facts that, if true, constitute a breach of any of the foregoing 
+warranties, the author(s) will hold harmless and indemnify AAAI, their 
+grantees, their licensees, and their distributors against any liability,
+ whether under judgment, decree, or compromise, and any legal fees and 
+expenses arising out of that claim or actions, and the undersigned will 
+cooperate fully in any defense AAAI may make to such claim or action. 
+Moreover, the undersigned agrees to cooperate in any claim or other 
+action seeking to protect or enforce any right the undersigned has 
+granted to AAAI in the article/paper. If any such claim or action fails 
+because of facts that constitute a breach of any of the foregoing 
+warranties, the undersigned agrees to reimburse whomever brings such 
+claim or action for expenses and attorneys’ fees incurred therein.  
+Author(s) retain all proprietary rights other than copyright (such as 
+patent rights).  Author(s) may make personal reuse of all or portions of
+ the above article/paper in other works of their own authorship.  
+Author(s) may reproduce, or have reproduced, their article/paper for the
+ author’s personal use, or for company use provided that AAAI copyright 
+and the source are indicated, and that the copies are not used in a way 
+that implies AAAI endorsement of a product or service of an employer, 
+and that the copies per se are not offered for sale. The foregoing right
+ shall not permit the posting of the article/paper in electronic or 
+digital form on any computer network, except by the author or the 
+author’s employer, and then only on the author’s or the employer’s own 
+web page or ftp site. Such web page or ftp site, in addition to the 
+aforementioned requirements of this Paragraph, must provide an 
+electronic reference or link back to the AAAI electronic server, and 
+shall not post other AAAI copyrighted materials not of the author’s or 
+the employer’s creation (including tables of contents with links to 
+other papers) without AAAI’s written permission.  Author(s) may make 
+limited distribution of all or portions of their article/paper prior to 
+publication.  In the case of work performed under U.S. Government 
+contract, AAAI grants the U.S. Government royalty-free permission to 
+reproduce all or portions of the above article/paper, and to authorize 
+others to do so, for U.S. Government purposes.  In the event the above 
+article/paper is not accepted and published by AAAI, or is withdrawn by 
+the author(s) before acceptance by AAAI, this agreement becomes null and
+ void.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2018/04/27</td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>10/29/2019, 2:15:02 PM</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>www.aaai.org</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>Thirty-Second AAAI Conference on Artificial Intelligence</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Crowd behavior understanding is crucial yet challenging across
+ a wide range of applications, since crowd behavior is inherently 
+determined by a sequential decision-making process based on various 
+factors, such as the pedestrians' own destinations, interaction with 
+nearby pedestrians and anticipation of upcoming events. In this paper, 
+we propose a novel framework of Social-Aware Generative Adversarial 
+Imitation Learning (SA-GAIL) to mimic the underlying decision-making 
+process of pedestrians in crowds. Specifically, we infer the latent 
+factors of human decision-making process in an unsupervised manner by 
+extending the Generative Adversarial Imitation Learning framework to 
+anticipate future paths of pedestrians. Different factors of human 
+decision making are disentangled with mutual information maximization, 
+with the process modeled by collision avoidance regularization and 
+Social-Aware LSTMs. Experimental results demonstrate the potential of 
+our framework in disentangling the latent decision-making factors of 
+pedestrians and stronger abilities in predicting future trajectories.</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>Thirty-Second AAAI Conference on Artificial Intelligence</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_B2L4T892">Full Text PDF					</li>
+					<li id="item_52G3DXCX">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_6BEHMCHV" class="item conferencePaper">
+			<h2>You’ll never walk alone: modeling social behavior for multi-target tracking</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>S. Pellegrini</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>A. Ess</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>K. Schindler</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>L. Van Gool</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2009</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>CiteSeer</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Object tracking typically relies on a dynamic model to predict
+ the object’s location from its past trajectory. In crowded scenarios a 
+strong dynamic model is particularly important, because more accurate 
+predictions allow for smaller search regions, which greatly simplifies 
+data association. Traditional dynamic models predict the location for 
+each target solely based on its own history, without tak-ing into 
+account the remaining scene objects. Collisions are resolved only when 
+they happen. Such an approach ignores important aspects of human 
+behavior: people are driven by their future destination, take into 
+account their environment, anticipate collisions, and adjust their 
+trajec-tories at an early stage in order to avoid them. In this work, we
+ introduce a model of dynamic social behavior, inspired by models 
+developed for crowd simulation. The model is trained with videos 
+recorded from birds-eye view at busy locations, and applied as a motion 
+model for multi-people tracking from a vehicle-mounted camera. 
+Experiments on real sequences show that accounting for social 
+interactions and scene knowledge improves tracking performance, 
+especially during occlusions.</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>In Int. Conf. on Computer Vision (iccv</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>You’ll never walk alone</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/18/2021, 11:44:31 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_EY3GPUBM">Citeseer - Full Text PDF					</li>
+					<li id="item_QX77R5CR">Citeseer - Snapshot					</li>
+				</ul>
+			</li>
+
+		</ul>
+	
+</body></html>

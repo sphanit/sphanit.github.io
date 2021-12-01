@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Zotero Report</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9Cg==">
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K">
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg==">
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_ZA2IKRDM" class="item journalArticle">
+			<h2>A POMDP Treatment of Vehicle-Pedestrian Interaction: Implicit Coordination Via Uncertainty-Aware Planning</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Ya-Chuan Hsu</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Swaminathan Gopalswamy</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Srikanth Saripalli</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Dylan Shell</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>8</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Drivers and other road users often encounter situations (e.g.,
+ arriving at an intersection simultaneously) where priority is ambiguous
+ or unclear but must be resolved via communication to reach agreement. 
+This poses a challenge for autonomous vehicles, for which no direct 
+means for expressing intent and acknowledgment has yet been established.
+ This paper contributes a minimal model to manage ambiguity and produce 
+actions that are expressive and encode aspects of intent. Speciﬁcally, 
+intent is treated as a latent variable, communicated implicitly through a
+ partially observable Markov decision process (POMDP). We validate the 
+model in a simple setting: a simulation of a prototypical crossing with a
+ vehicle and one pedestrian at an unsignalized intersection. We further 
+report use of our self-driving Ford Lincoln MKZ platform, through which 
+we conducted experimental trials of the method involving real-time 
+interaction. The experiment shows the method achieves safe and efﬁcient 
+navigation.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/14/2021, 11:52:31 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/14/2021, 11:52:31 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_T9EA3NDN">Hsu et al. - A POMDP Treatment of Vehicle-Pedestrian Interactio.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_XWT8PCQ3" class="item conferencePaper">
+			<h2>Bayes Estimator Human Intention Classifier Human Trajectory 
+Regression Bayes Estimator Human Intention Classifier Human Trajectory 
+Regression Bayes Estimator Human Intention Classifier Human Trajectory 
+Regression</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Chonhyon Park</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jan Ondrej</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Max Gilbert</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Kyle Freeman</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Carol O’Sullivan</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2016</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Semantic Scholar</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>We present an algorithmic framework for the early 
+classification of human intentions, and use it to accurately predict 
+future human motions when planning the path of a robot in an environment
+ that is shared with humans. During an off-line learning phase, a 
+classifier that can recognize when a human intends to interact with the 
+robot is trained. At runtime, this trained classifier allows us to 
+recognize humans who intend to interact with, or obstruct, the robot in 
+some way. We validate our approach using both recorded and simulated 
+data in an environment in which some humans intentionally obstruct the 
+robot. Our classifier identifies these potential blockers, thus allowing
+ the robot to safely and efficiently navigate the environment by 
+minimizing the chances of being blocked.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/25/2019, 10:58:07 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/25/2019, 10:58:07 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Automated planning and scheduling</li>
+					<li>Behavior</li>
+					<li>Benchmark (computing)</li>
+					<li>Blocking (computing)</li>
+					<li>Intentionally blank page</li>
+					<li>Linear classifier</li>
+					<li>Motion</li>
+					<li>Non-blocking algorithm</li>
+					<li>Online and offline</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_5NW2CFY5">Full Text PDF					</li>
+					<li id="item_4DZCKVQV">Semantic Scholar Link					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_6IZR5J2N" class="item conferencePaper">
+			<h2>HI Robot: Human intention-aware robot planning for safe and efficient navigation in crowds</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Chonhyon Park</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jan Ondřej</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Max Gilbert</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Kyle Freeman</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Carol O'Sullivan</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>3320-3326</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>October 2016</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>ISSN: 2153-0866</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/IROS.2016.7759511">10.1109/IROS.2016.7759511</a></td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>We present an algorithmic framework for the early 
+classification of human intentions, and use it to accurately predict 
+future human motions when planning the path of a robot in an environment
+ that is shared with humans. During an off-line learning phase, a 
+classifier that can recognize when a human intends to interact with the 
+robot is trained. At runtime, this trained classifier allows us to 
+recognize humans who intend to interact with, or obstruct, the robot in 
+some way. We validate our approach using both recorded and simulated 
+data in an environment in which some humans intentionally obstruct the 
+robot. Our classifier identifies these potential blockers, thus allowing
+ the robot to safely and efficiently navigate the environment by 
+minimizing the chances of being blocked.</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>HI Robot</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computational modeling</li>
+					<li>HI robot</li>
+					<li>human intention-aware robot planning</li>
+					<li>mobile robots</li>
+					<li>Navigation</li>
+					<li>off-line learning phase</li>
+					<li>path planning</li>
+					<li>Planning</li>
+					<li>Robot sensing systems</li>
+					<li>Service robots</li>
+					<li>Trajectory</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_LBEW4INL">IEEE Xplore Abstract Record					</li>
+					<li id="item_F47YFVEI">Park et al. - 2016 - HI Robot Human intention-aware robot planning for.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_9XVL7E72" class="item conferencePaper">
+			<h2>Inverse Reinforcement Learning algorithms and features for robot navigation in crowds: An experimental comparison</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>D. Vasquez</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>B. Okal</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>K. O. Arras</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>1341-1346</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>Sep. 2014</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/IROS.2014.6942731">10.1109/IROS.2014.6942731</a></td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2014 IEEE/RSJ International Conference on Intelligent Robots and Systems</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>For mobile robots which operate in human populated 
+environments, modeling social interactions is key to understand and 
+reproduce people's behavior. A promising approach to this end is Inverse
+ Reinforcement Learning (IRL) as it allows to model the factors that 
+motivate people's actions instead of the actions themselves. A crucial 
+design choice in IRL is the selection of features that encode the 
+agent's context. In related work, features are typically chosen ad hoc 
+without systematic evaluation of the alternatives and their actual 
+impact on the robot's task. In this paper, we introduce a new software 
+framework to systematically investigate the effect features and learning
+ algorithms used in the literature. We also present results for the task
+ of socially compliant robot navigation in crowds, evaluating two 
+different IRL approaches and several feature sets in large-scale 
+simulations. The results are benchmarked according to a proposed set of 
+objective and subjective performance metrics.</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2014 IEEE/RSJ International Conference on Intelligent Robots and Systems</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Inverse Reinforcement Learning algorithms and features for robot navigation in crowds</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Airports</li>
+					<li>control engineering computing</li>
+					<li>inverse reinforcement learning algorithm</li>
+					<li>IRL approach</li>
+					<li>learning (artificial intelligence)</li>
+					<li>mobile robots</li>
+					<li>Navigation</li>
+					<li>objective performance metrics</li>
+					<li>path planning</li>
+					<li>robot navigation</li>
+					<li>Robots</li>
+					<li>Silicon</li>
+					<li>social interaction modeling</li>
+					<li>software framework</li>
+					<li>subjective performance metrics</li>
+					<li>Tin</li>
+					<li>Vectors</li>
+					<li>Vehicles</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_B4BQIBLS">IEEE Xplore Abstract Record					</li>
+					<li id="item_53UMJD3M">Submitted Version					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_C5CI65HN" class="item bookSection">
+			<h2>MPDM: Multi-policy Decision-Making from Autonomous Driving to Social Robot Navigation</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book Section</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Harald Waschl</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Ilya Kolmanovsky</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Frank Willems</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alex G. Cunningham</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Enric Galceran</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Dhanvin Mehta</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Gonzalo Ferrer</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Ryan M. Eustice</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Edwin Olson</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://link.springer.com/10.1007/978-3-319-91569-2_10">http://link.springer.com/10.1007/978-3-319-91569-2_10</a></td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>476</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Cham</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Springer International Publishing</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>201-223</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-3-319-91568-5 978-3-319-91569-2</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2019</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>DOI: 10.1007/978-3-319-91569-2_10</td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/4/2019, 12:57:53 PM</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>This chapter presents Multi-Policy Decision-Making (MPDM): a 
+novel approach to navigating in dynamic multi-agent environments. Rather
+ than planning the trajectory of the robot explicitly, the planning 
+process selects one of a set of closed-loop behaviors whose utility can 
+be predicted through forward simulation that capture the complex 
+interactions between the actions of these agents. These polices capture 
+different high-level behavior and intentions, such as driving along a 
+lane, turning at an intersection, or following pedestrians. We present 
+two different scenarios where MPDM has been applied successfully: An 
+autonomous driving environment that models vehicle behavior for both our
+ vehicle and nearby vehicles and a social environment, where multiple 
+agents or pedestrians conﬁgure a dynamic environment for autonomous 
+robot navigation. We present extensive validation for MPDM on both 
+scenarios, using simulated and real-world experiments.</td>
+					</tr>
+					<tr>
+					<th>Book Title</th>
+						<td>Control Strategies for Advanced Driver Assistance Systems and Autonomous Driving Functions</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>MPDM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_NW4AQYES">Cunningham et al. - 2019 - MPDM Multi-policy Decision-Making from Autonomous.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_NIHSQCHE" class="item journalArticle">
+			<h2>Relational Graph Learning for Crowd Navigation</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Changan Chen</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Sha Hu</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Payam Nikdel</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Greg Mori</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Manolis Savva</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>7</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>We present a relational graph learning approach for robotic 
+crowd navigation using model-based deep reinforcement learning that 
+plans actions by looking into the future. Our approach reasons about the
+ relations between all agents based on their latent features and uses a 
+Graph Convolutional Network to encode higher-order interactions in each 
+agent’s state representation, which is subsequently leveraged for state 
+prediction and value estimation. The ability to predict human motion 
+allows us to perform multi-step lookahead planning, taking into account 
+the temporal evolution of human crowds. We evaluate our approach against
+ a state-of-the-art baseline for crowd navigation and ablations of our 
+model to demonstrate that navigation with our approach is more efﬁcient,
+ results in fewer collisions, and avoids failure cases involving 
+oscillatory and freezing behaviors.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/14/2021, 11:51:02 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/14/2021, 11:51:02 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_JXKACWZW">Chen et al. - Relational Graph Learning for Crowd Navigation.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_87Y4LWH8" class="item conferencePaper">
+			<h2>Robot local navigation with learned social cost functions</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Noé Pérez-Higueras</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Rafael Ramón-Vigo</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Fernando Caballero</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Luis Merino</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>02</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>618-625</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>Sep. 2014</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.5220/0005120806180625">10.5220/0005120806180625</a></td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2014 11th International Conference on Informatics in Control, Automation and Robotics (ICINCO)</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Robot navigation in human environments is an active research 
+area that poses serious challenges. Among them, human-awareness has gain
+ lot of attention in the last years due to its important role in human 
+safety and robot acceptance. The proposed robot navigation system 
+extends state of the navigation schemes with some social skills in order
+ to naturally integrate the robot motion in crowded areas. Learning has 
+been proposed as a more principled way of estimating the insights of 
+human social interactions. To do this, inverse reinforcement learning is
+ used to derive social cost functions by observing persons walking 
+through the streets. Our objective is to incorporate such costs into the
+ robot navigation stack in order to “emulate” these human interactions. 
+In order to alleviate the complexity, the system is focused on learning 
+an adequate cost function to be applied at the local navigation level, 
+thus providing direct low-level controls to the robot. The paper 
+presents an analysis of the results in a robot navigating in challenging
+ real scenarios, analyzing and comparing this approach with other 
+algorithms.</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2014 11th International Conference on Informatics in Control, Automation and Robotics (ICINCO)</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Cost function</li>
+					<li>Inverse Reinforcement Learning</li>
+					<li>Lasers</li>
+					<li>Learning from Demonstrations</li>
+					<li>Navigation</li>
+					<li>Planning</li>
+					<li>Robot Navigation</li>
+					<li>Robot sensing systems</li>
+					<li>Social Robots</li>
+					<li>Trajectory</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_C5KRPSPT">IEEE Xplore Abstract Record					</li>
+					<li id="item_PJRGLUTU">Pérez-Higueras et al. - 2014 - Robot Local Navigation with Learned Social Cost Fu.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_T6MY53WK" class="item journalArticle">
+			<h2>Robot Navigation in Crowded Environments Using Deep Reinforcement Learning</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Lucia Liu</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Daniel Dugas</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Gianluca Cesari</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Roland Siegwart</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Renaud DubÃ</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>7</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Mobile robots operating in public environments require the 
+ability to navigate among humans and other obstacles in a socially 
+compliant and safe manner. This work presents a combined imitation 
+learning and deep reinforcement learning approach for motion planning in
+ such crowded and cluttered environments. By separately processing 
+information related to static and dynamic objects, we enable our network
+ to learn motion patterns that are tailored to real-world environments. 
+Our model is also designed such that it can handle usual cases in which 
+robots can be equipped with sensor suites that only offer limited ﬁeld 
+of view. Our model outperforms current state-ofthe-art approaches, which
+ is shown in simulated environments containing human-like agents and 
+static obstacles. Additionally, we demonstrate the real-time performance
+ and applicability of our model by successfully navigating a robotic 
+platform through real-world environments.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/14/2021, 11:51:05 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/14/2021, 11:51:05 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_5WGD2TIQ">Liu et al. - Robot Navigation in Crowded Environments Using Dee.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_F4UXTXQV" class="item journalArticle">
+			<h2>Socially Aware Motion Planning with Deep Reinforcement Learning</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Yu Fan Chen</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Michael Everett</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Miao Liu</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jonathan P. How</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://arxiv.org/abs/1703.08862">http://arxiv.org/abs/1703.08862</a></td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>arXiv:1703.08862 [cs]</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2017-03-26</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>arXiv: 1703.08862</td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/2/2019, 4:49:49 PM</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>arXiv.org</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>For robotic vehicles to navigate safely and efﬁciently in 
+pedestrian-rich environments, it is important to model subtle human 
+behaviors and navigation rules (e.g., passing on the right). However, 
+while instinctive to humans, socially compliant navigation is still 
+difﬁcult to quantify due to the stochasticity in people’s behaviors. 
+Existing works are mostly focused on using feature-matching techniques 
+to describe and imitate human paths, but often do not generalize well 
+since the feature values can vary from person to person, and even run to
+ run. This work notes that while it is challenging to directly specify 
+the details of what to do (precise mechanisms of human navigation), it 
+is straightforward to specify what not to do (violations of social 
+norms). Speciﬁcally, using deep reinforcement learning, this work 
+develops a time-efﬁcient navigation policy that respects common social 
+norms. The proposed method is shown to enable fully autonomous 
+navigation of a robotic vehicle moving at human walking speed in an 
+environment with many pedestrians.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer Science - Artificial Intelligence</li>
+					<li>Computer Science - Human-Computer Interaction</li>
+					<li>Computer Science - Robotics</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_SDXVSS4N">
+<p class="plaintext">Comment: 8 pages</p>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_L8CHNF37">Chen et al. - 2017 - Socially Aware Motion Planning with Deep Reinforce.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_H2R3WRBA" class="item conferencePaper">
+			<h2>Socially-aware robot navigation: A learning approach</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>M. Luber</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>L. Spinello</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>J. Silva</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>K. O. Arras</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>902-907</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>October 2012</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/IROS.2012.6385716">10.1109/IROS.2012.6385716</a></td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2012 IEEE/RSJ International Conference on Intelligent Robots and Systems</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The ability to act in a socially-aware way is a key skill for 
+robots that share a space with humans. In this paper we address the 
+problem of socially-aware navigation among people that meets objective 
+criteria such as travel time or path length as well as subjective 
+criteria such as social comfort. Opposed to model-based approaches 
+typically taken in related work, we pose the problem as an unsupervised 
+learning problem. We learn a set of dynamic motion prototypes from 
+observations of relative motion behavior of humans found in publicly 
+available surveillance data sets. The learned motion prototypes are then
+ used to compute dynamic cost maps for path planning using an any-angle 
+A* algorithm. In the evaluation we demonstrate that the learned 
+behaviors are better in reproducing human relative motion in both 
+criteria than a Proxemics-based baseline method.</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2012 IEEE/RSJ International Conference on Intelligent Robots and Systems</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Socially-aware robot navigation</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>any-angle A* algorithm</li>
+					<li>Computational modeling</li>
+					<li>Context</li>
+					<li>dynamic motion prototypes</li>
+					<li>Dynamics</li>
+					<li>Heuristic algorithms</li>
+					<li>Humans</li>
+					<li>learning approach</li>
+					<li>mobile robots</li>
+					<li>path length</li>
+					<li>Prototypes</li>
+					<li>Proxemics-based baseline method</li>
+					<li>Robots</li>
+					<li>social sciences</li>
+					<li>socially-aware robot navigation</li>
+					<li>travel time</li>
+					<li>unsupervised learning</li>
+					<li>unsupervised learning problem</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_SQG45X52">IEEE Xplore Abstract Record					</li>
+					<li id="item_MLN8YN5E">Submitted Version					</li>
+				</ul>
+			</li>
+
+		</ul>
+	
+</body></html>
