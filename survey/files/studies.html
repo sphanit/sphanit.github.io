@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Zotero Report</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9Cg==">
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K">
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg==">
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_Z7BHZL87" class="item journalArticle">
+			<h2>Comfort-oriented social force model and learned lessons</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Vidal Carretero</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>In this paper, we propose a new Social Force Model (SFM), 
+called COSFM (Comfort-Oriented Social Force Model), that maximizes the 
+comfort of people when robots navigate around them. We describe a 
+navigation system that allows robots to reach their target in small 
+human environments like a ﬂat or small corridors in a safe and 
+comfortable manner. More precisely, the proposed approach is tested with
+ a 3D version of the Social Force Model (SFM) for aerial robots with 
+some restrictions in order to maximize the comfort of nearby humans. To 
+accomplish this commitment, we include a navigation scheme that predicts
+ the humans motion and intention so the robot can safely avoid people. 
+Moreover, to avoid surprises, robots will never go faster than human 
+motion velocity. This contrasts with other conventional works where the 
+environment is neither so tight or close with people and walls. This 
+work is based on previous works of SFM [1] applied to robots that come 
+from an older framework for understanding human movements in crowds [2].
+ However, we must advise that even if the ﬁrst results are quite good 
+there is still much work to do to obtain a fully comfortable model. The 
+current model shows great potential to solve difﬁcult decisions, even 
+scale on many elements in close environments.Finally, the results are 
+good enough to think it is an appropriate model for indoor human close 
+environments with applications such as delivering goods or reaching 
+people for help in buildings.</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>8</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_CJTGG7DG">Carretero - Comfort-oriented social force model and learned le.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_BCAE2UNA" class="item journalArticle">
+			<h2>Modelling Social Interaction between Humans and Service Robots in Large Public Spaces</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Bani Anvari</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Helge Arne Wurdemann</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>With the advent of service robots in public places (e.g., in 
+airports and shopping malls), understanding sociopsychological 
+interactions between humans and robots is of paramount importance. On 
+the one hand, traditional robotic navigation systems consider humans and
+ robots as moving obstacles and focus on the problem of real-time 
+collision avoidance in Human-Robot Interaction (HRI) using mathematical 
+models. On the other hand, the behavior of a robot has been determined 
+with respect to a human. Parameters for human-human interaction have 
+been assumed and applied to interactions involving robots. One major 
+limitation is the lack of sufﬁcient data for calibration and validation 
+procedures.</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>8</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_RGV6RWRS">Anvari and Wurdemann - Modelling Social Interaction between Humans and Se.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_YUCEXAV4" class="item journalArticle">
+			<h2>The Emotionally Intelligent Robot: Improving Social Navigation in Crowded Environments</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Aniket Bera</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Tanmay Randhavane</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Rohan Prinja</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Kyra Kapsaskis</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Austin Wang</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Kurt Gray</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Dinesh Manocha</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>We present a real-time algorithm for emotion-aware navigation 
+of a robot among pedestrians. Our approach estimates time-varying 
+emotional behaviors of pedestrians from their faces and trajectories 
+using a combination of Bayesian-inference, CNN-based learning, and the 
+PAD (Pleasure-Arousal-Dominance) model from psychology. These PAD 
+characteristics are used for long-term path prediction and generating 
+proxemic constraints for each pedestrian. We use a multi-channel model 
+to classify pedestrian characteristics into four emotion categories 
+(happy, sad, angry, neutral). In our validation results, we observe an 
+emotion detection accuracy of 85.33%. We formulate emotion-based 
+proxemic constraints to perform socially-aware robot navigation in low- 
+to medium-density environments. We demonstrate the benefits of our 
+algorithm in simulated environments with tens of pedestrians as well as 
+in a real-world setting with Pepper, a social humanoid robot.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2019-03-07</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>The Emotionally Intelligent Robot</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>arXiv.org</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://arxiv.org/abs/1903.03217">http://arxiv.org/abs/1903.03217</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/4/2019, 11:50:48 AM</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>arXiv: 1903.03217</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>arXiv:1903.03217 [cs]</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer Science - Robotics</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_MWJUHMNA">arXiv Fulltext PDF					</li>
+					<li id="item_FCTKE5QH">arXiv.org Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_EKV9475Q" class="item conferencePaper">
+			<h2>Effects of Distinct Robot Navigation Strategies on Human Behavior in a Crowded Environment</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Christoforos Mavrogiannis</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alena M. Hutchinson</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>John Macdonald</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Patricia Alves-Oliveira</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Ross A. Knepper</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>State-of-the-art social robot navigation algorithms often lack
+ a thorough experimental validation in human environments: simulated 
+evaluations are often conducted under unrealistically strong assumptions
+ that prohibit deployment in real world environments; experimental 
+demonstrations that are limited in sample size do not provide adequate 
+evidence regarding the user experience and the robot behavior; ﬁeld 
+studies may suffer from the noise imposed by uncontrollable factors from
+ the environment; controlled lab experiments often fail to properly 
+enforce challenging interaction settings. This paper contributes a ﬁrst 
+step towards addressing the outlined gaps in the literature. We present 
+an original experiment, designed to test the implicit interaction 
+between a mobile robot and a group of navigating human participants, 
+under challenging settings in a controlled lab environment. We conducted
+ a large-scale, within-subjects design study with 105 participants, 
+exposed to three different conditions, corresponding to three distinct 
+navigation strategies, executed by a telepresence robot (two autonomous,
+ one teleoperated). We analyzed observed human and robot trajectories, 
+under close interaction settings and participants’ impressions regarding
+ the robot’s behavior. Key ﬁndings, extracted from a comparative 
+statistical analysis include: (1) evidence that human acceleration is 
+lower when navigating around an autonomous robot compared to a 
+teleoperated one; (2) the lack of evidence to support the conventional 
+expectation that teleoperation would be humans’ preferred strategy. To 
+the best of our knowledge, our study is unique in terms of goals, 
+settings, thoroughness of evaluation and sample size.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>3/2019</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://ieeexplore.ieee.org/document/8673115/">https://ieeexplore.ieee.org/document/8673115/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/4/2019, 11:47:06 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Daegu, Korea (South)</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>IEEE</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-5386-8555-6</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>421-430</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2019 14th ACM/IEEE International Conference on Human-Robot Interaction (HRI)</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2019 14th ACM/IEEE International Conference on Human-Robot Interaction (HRI)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/HRI.2019.8673115">10.1109/HRI.2019.8673115</a></td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_S9TD9GJM">Mavrogiannis et al. - 2019 - Effects of Distinct Robot Navigation Strategies on.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_73EIMW86" class="item journalArticle">
+			<h2>Pedestrian Dominance Modeling for Socially-Aware Robot Navigation</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Tanmay Randhavane</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Aniket Bera</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Emily Kubin</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Austin Wang</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Kurt Gray</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Dinesh Manocha</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>We present a Pedestrian Dominance Model (PDM) to identify the 
+dominance characteristics of pedestrians for robot navigation. Through a
+ perception study on a simulated dataset of pedestrians, PDM models the 
+perceived dominance levels of pedestrians with varying motion behaviors 
+corresponding to trajectory, speed, and personal space. At runtime, we 
+use PDM to identify the dominance levels of pedestrians to facilitate 
+socially-aware navigation for the robots. PDM can predict dominance 
+levels from trajectories with ~85% accuracy. Prior studies in psychology
+ literature indicate that when interacting with humans, people are more 
+comfortable around people that exhibit complementary movement behaviors.
+ Our algorithm leverages this by enabling the robots to exhibit 
+complementing responses to pedestrian dominance. We also present an 
+application of PDM for generating dominance-based collision-avoidance 
+behaviors in the navigation of autonomous vehicles among pedestrians. We
+ demonstrate the benefits of our algorithm for robots navigating among 
+tens of pedestrians in simulated environments.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2019-02-13</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>arXiv.org</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://arxiv.org/abs/1810.06613">http://arxiv.org/abs/1810.06613</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/4/2019, 11:25:51 AM</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>arXiv: 1810.06613</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>arXiv:1810.06613 [cs]</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer Science - Robotics</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_SPLVLRHI">
+<p class="plaintext">Comment: To Appear in ICRA 2019</p>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_GDRV5EWF">arXiv.org Snapshot					</li>
+					<li id="item_BYTXTQE5">arXiv Fulltext PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_C5ARY9K4" class="item journalArticle">
+			<h2>The Socially Invisible Robot: Navigation in the Social World using Robot Entitativity</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Aniket Bera</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Tanmay Randhavane</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Emily Kubin</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Austin Wang</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Dinesh Manocha</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Kurt Gray</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>We present a real-time, data-driven algorithm to enhance the 
+social-invisibility of robots within crowds. Our approach is based on 
+prior psychological research, which reveals that people notice 
+and--importantly--react negatively to groups of social actors when they 
+have high entitativity, moving in a tight group with similar appearances
+ and trajectories. In order to evaluate that behavior, we performed a 
+user study to develop navigational algorithms that minimize 
+entitativity. This study establishes a mapping between emotional 
+reactions and multi-robot trajectories and appearances and further 
+generalizes the finding across various environmental conditions. We 
+demonstrate the applicability of our entitativity modeling for 
+trajectory computation for active surveillance and dynamic intervention 
+in simulated robot-human interaction scenarios. Our approach empirically
+ shows that various levels of entitative robots can be used to both 
+avoid and influence pedestrians while not eliciting strong emotional 
+reactions, giving multi-robot systems socially-invisibility.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2018-07-18</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>The Socially Invisible Robot</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>arXiv.org</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://arxiv.org/abs/1805.05543">http://arxiv.org/abs/1805.05543</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/4/2019, 11:43:20 AM</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>arXiv: 1805.05543</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>arXiv:1805.05543 [cs]</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer Science - Robotics</li>
+					<li>Computer Science - Human-Computer Interaction</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_NFFM4Q85">arXiv Fulltext PDF					</li>
+					<li id="item_APE8534F">arXiv.org Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_Z7KPQMJW" class="item conferencePaper">
+			<h2>Classifying Group Emotions for Socially-Aware Autonomous Vehicle Navigation</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Aniket Bera</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Tanmay Randhavane</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Austin Wang</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Dinesh Manocha</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Emily Kubin</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Kurt Gray</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2018</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>openaccess.thecvf.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/w14/html/Bera_Classifying_Group_Emotions_CVPR_2018_paper.html">http://openaccess.thecvf.com/content_cvpr_2018_workshops/w14/html/Bera_Classifying_Group_Emotions_CVPR_2018_paper.html</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/4/2019, 11:05:22 AM</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>1039-1047</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_T7VSDIUV">Full Text PDF					</li>
+					<li id="item_AABDLM84">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_B5XYZG55" class="item journalArticle">
+			<h2>SocioSense: Robot Navigation Amongst Pedestrians with Social and Psychological Constraints</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Aniket Bera</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Tanmay Randhavane</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Rohan Prinja</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Dinesh Manocha</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>We present a real-time algorithm, SocioSense, for 
+socially-aware navigation of a robot amongst pedestrians. Our approach 
+computes time-varying behaviors of each pedestrian using Bayesian 
+learning and Personality Trait theory. These psychological 
+characteristics are used for long-term path prediction and generating 
+proximic characteristics for each pedestrian. We combine these 
+psychological constraints with social constraints to perform human-aware
+ robot navigation in low- to medium-density crowds. The estimation of 
+time-varying behaviors and pedestrian personalities can improve the 
+performance of long-term path prediction by 21%, as compared to prior 
+interactive path prediction algorithms. We also demonstrate the benefits
+ of our socially-aware navigation in simulated environments with tens of
+ pedestrians.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2017-06-04</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>SocioSense</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>arXiv.org</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://arxiv.org/abs/1706.01102">http://arxiv.org/abs/1706.01102</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/4/2019, 11:34:25 AM</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>arXiv: 1706.01102</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>arXiv:1706.01102 [cs]</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Computer Science - Robotics</li>
+					<li>Computer Science - Multiagent Systems</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_P5L9D9E6">arXiv.org Snapshot					</li>
+					<li id="item_BCBANPGQ">arXiv Fulltext PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_CYED6DWE" class="item conferencePaper">
+			<h2>Show me your moves! Conveying navigation intention of a mobile robot to humans</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alyxander David May</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Christian Dondrup</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Marc Hanheide</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>When humans and mobile robots share the same space, one of 
+their challenges is to navigate around each other and manage their 
+mutual navigational intents. While humans have developed excellent 
+skills in inferring their counterpart's intentions via a number of 
+implicit and non-verbal cues, making navigation also in crowds an ease, 
+this kind of effective and efficient communication often falls short in 
+human-robot encounters. In this paper, two alternative approaches to 
+convey navigational intent of a mobile robot to humans in a shared 
+environment are proposed and analysed. The first is utilising 
+anthropomorphic features of the mobile robot to realise an implicit 
+joint attention using gaze to represent the direction of navigational 
+intent. In the second approach, a more technical design adopting the 
+semantics of car's turn indicators, has been implemented. The paper 
+compares both approaches with each other and against a control behaviour
+ without any communication of intent. Both approaches show statistically
+ significant differences in comparison to the control behaviour. 
+However, the second approach using indicators has shown as being more 
+effective in conveying the intent and also has a higher positive impact 
+on the comfort of the humans encountering the robot.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>Sep. 2015</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>1-6</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2015 European Conference on Mobile Robots (ECMR)</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2015 European Conference on Mobile Robots (ECMR)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ECMR.2015.7324049">10.1109/ECMR.2015.7324049</a></td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>mobile robots</li>
+					<li>Navigation</li>
+					<li>Mobile robots</li>
+					<li>human-robot interaction</li>
+					<li>humans</li>
+					<li>Magnetic heads</li>
+					<li>mobile robot</li>
+					<li>navigation</li>
+					<li>navigation intention</li>
+					<li>navigational intent</li>
+					<li>nonverbal cues</li>
+					<li>Robot sensing systems</li>
+					<li>Semantics</li>
+					<li>Visualization</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_X8G854AG">IEEE Xplore Abstract Record					</li>
+					<li id="item_4522WGPH">May et al. - 2015 - Show me your moves! Conveying navigation intention.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_DNK2C3VC" class="item conferencePaper">
+			<h2>Human-robot co-navigation using anticipatory indicators of human walking motion</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Vaibhav V. Unhelkar</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Claudia Perez-D'Arpino</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Leia Stirling</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Julie A. Shah</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Mobile, interactive robots that operate in humancentric 
+environments need the capability to safely and efﬁciently navigate 
+around humans. This requires the ability to sense and predict human 
+motion trajectories and to plan around them. In this paper, we present a
+ study that supports the existence of statistically signiﬁcant 
+biomechanical turn indicators of human walking motions. Further, we 
+demonstrate the effectiveness of these turn indicators as features in 
+the prediction of human motion trajectories. Human motion capture data 
+is collected with predeﬁned goals to train and test a prediction 
+algorithm. Use of anticipatory features results in improved performance 
+of the prediction algorithm. Lastly, we demonstrate the closedloop 
+performance of the prediction algorithm using an existing algorithm for 
+motion planning within dynamic environments. The anticipatory indicators
+ of human walking motion can be used with different prediction and/or 
+planning algorithms for robotics; the chosen planning and prediction 
+algorithm demonstrates one such implementation for human-robot 
+conavigation.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>5/2015</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://ieeexplore.ieee.org/document/7140067/">http://ieeexplore.ieee.org/document/7140067/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/4/2019, 11:18:22 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Seattle, WA, USA</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>IEEE</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-4799-6923-4</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>6183-6190</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2015 IEEE International Conference on Robotics and Automation (ICRA)</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2015 IEEE International Conference on Robotics and Automation (ICRA)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ICRA.2015.7140067">10.1109/ICRA.2015.7140067</a></td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_S95GYREP">Unhelkar et al. - 2015 - Human-robot co-navigation using anticipatory indic.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_EZ2A3Z93" class="item journalArticle">
+			<h2>Robot navigation in dense human crowds: Statistical models and experimental studies of human–robot cooperation</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Pete Trautman</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jeremy Ma</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Richard M. Murray</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Andreas Krause</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>We consider the problem of navigating a mobile robot through 
+dense human crowds. We begin by exploring a fundamental impediment to 
+classical motion planning algorithms called the ‘‘freezing robot 
+problem’’: once the environment surpasses a certain level of dynamic 
+complexity, the planner decides that all forward paths are unsafe, and 
+the robot freezes in place (or performs unnecessary maneuvers) to avoid 
+collisions. We argue that this problem can be avoided if the robot 
+anticipates human cooperation, and accordingly we develop interacting 
+Gaussian processes, a prediction density that captures cooperative 
+collision avoidance, and a ‘‘multiple goal’’ extension that models the 
+goal-driven nature of human decision making. We validate this model with
+ an empirical study of robot navigation in dense human crowds (488 
+runs), specifically testing how cooperation models effect navigation 
+performance. The multiple goal interacting Gaussian processes algorithm 
+performs comparably with human teleoperators in crowd densities nearing 
+0.8 humans/m2, while a state-of-theart non-cooperative planner exhibits 
+unsafe behavior more than three times as often as the multiple goal 
+extension, and twice as often as the basic interacting Gaussian process 
+approach. Furthermore, a reactive planner based on the widely used 
+dynamic window approach proves insufficient for crowd densities above 
+0.55 people/m2. We also show that our noncooperative planner or our 
+reactive planner capture the salient characteristics of nearly any 
+dynamic navigation algorithm. Based on these experimental results and 
+theoretical observations, we conclude that a cooperation model is 
+critical for safe and efficient robot navigation in dense human crowds.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>03/2015</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Robot navigation in dense human crowds</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://journals.sagepub.com/doi/10.1177/0278364914557874">http://journals.sagepub.com/doi/10.1177/0278364914557874</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/4/2019, 11:20:27 AM</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>34</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>335-356</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>The International Journal of Robotics Research</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1177/0278364914557874">10.1177/0278364914557874</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>3</td>
+					</tr>
+					<tr>
+					<th>Journal Abbr</th>
+						<td>The International Journal of Robotics Research</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>0278-3649, 1741-3176</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_REYK6SAZ">Trautman et al. - 2015 - Robot navigation in dense human crowds Statistica.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_VFZY5JBQ" class="item conferencePaper">
+			<h2>Proxemics models for human-aware navigation in robotics: 
+Grounding interaction and personal space models in experimental data 
+from psychology</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Marie-Lou Barnaud</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Nicolas Morgado</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Richard Palluel-Germain</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Julien Diard</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Anne Spalanzani</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>In order to navigate in a social environment, a robot must be 
+aware of social spaces, which include proximity and interaction-based 
+constraints. Previous models of interaction and personal spaces have 
+been inspired by studies in social psychology but not systematically 
+grounded and validated with respect to experimental data. We propose to 
+implement personal and interaction space models in order to replicate a 
+classical psychology experiment. Our robotic simulations can thus be 
+compared with experimental data from humans. Thanks to this comparison, 
+we first show the validity of our models, examine the necessity of the 
+interaction and personal spaces and discuss their geometric shape. Our 
+experiments suggest that human-like robotic behavior can be obtained by 
+using only correctly calibrated personal spaces (i.e., without explicit 
+representation of interaction spaces and therefore, without the need to 
+detect interactions between humans in the environment).</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>September 2014</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Proxemics models for human-aware navigation in robotics</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>HAL Archives Ouvertes</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://hal.archives-ouvertes.fr/hal-01082517">https://hal.archives-ouvertes.fr/hal-01082517</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/4/2019, 10:37:26 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Chicago, United States</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>Proceedings of the 3rd IROS'2014 workshop “Assistance and Service Robotics in a Human Environment”</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_HAVBUGY2">HAL PDF Full Text					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_ESCULEWK" class="item conferencePaper">
+			<h2>Evaluating directional cost models in navigation</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Thibault Kruse</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alexandra Kirsch</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Harmish Khambhaita</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Rachid Alami</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>A common approach to social distancing in robot navigation are
+ spatial cost functions around humans that cause the robot to prefer 
+paths that do not come too close to humans. However, in unpredictably 
+dynamic scenarios, following such paths may produce robot behavior that 
+appears confused. The concept of directional costs in cost functions [9]
+ is supposed to alleviate this problem without incurring the problem of 
+combinatorial explosions using temporal planning. With directional cost 
+functions, a robot attempts to solve spatial conﬂicts by adjusting the 
+velocity instead of the path, where possible. To complement results from
+ simulations, in this paper we describe a user study we conducted with a
+ PR2 robot and human participants to evaluate the new cost function 
+type. The study shows that the real robot behavior is similar to the 
+observations in simulation, and that participants rate the robot 
+behavior less confusing with the adapted cost model. The study also 
+shows other important behavior cues that can inﬂuence motion legibility.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2014</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Crossref</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://dl.acm.org/citation.cfm?doid=2559636.2559662">http://dl.acm.org/citation.cfm?doid=2559636.2559662</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/2/2019, 4:51:16 PM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Bielefeld, Germany</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>ACM Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-4503-2658-2</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>350-357</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>Proceedings of the 2014 ACM/IEEE international conference on Human-robot interaction - HRI '14</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>the 2014 ACM/IEEE international conference</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1145/2559636.2559662">10.1145/2559636.2559662</a></td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_5QPP8CGH">Kruse et al. - 2014 - Evaluating directional cost models in navigation.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_U296VMP4" class="item conferencePaper">
+			<h2>Towards more efficient navigation for robots and humans</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>David V. Lu</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>William D. Smart</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Effective robot navigation in the presence of humans is hard. 
+Not only do human obstacles move, they react to the movements of the 
+robot according to instinct and social rules. In order to efﬁciently 
+navigate around each other, both the robot and the human must move in a 
+way that takes the other into account. Failure to do so can lead to a 
+lowering of the perceived quality of the interaction and, more 
+importantly, it can also delay one or both parties, causing them to be 
+less efﬁcient in whatever task they are trying to achieve.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>11/2013</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://ieeexplore.ieee.org/document/6696579/">http://ieeexplore.ieee.org/document/6696579/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/4/2019, 11:14:47 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Tokyo</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>IEEE</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-4673-6358-7 978-1-4673-6357-0</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>1707-1713</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2013 IEEE/RSJ International Conference on Intelligent Robots and Systems</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2013 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2013)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/IROS.2013.6696579">10.1109/IROS.2013.6696579</a></td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_5AWES64J">Lu and Smart - 2013 - Towards more efficient navigation for robots and h.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_DDCHTYFZ" class="item conferencePaper">
+			<h2>Towards Legible Robot Navigation - How to Increase the Intend Expressiveness of Robot Navigation Behavior</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Christina Lichtenthäler</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alexandra Kirsch</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The work at hand addresses the question: How can we achieve 
+legible robot navigation? To this end, we investigate current 
+state-of-the-art assumptions and methods regarding legible robot 
+navigation in order to propose key factors for the development of a 
+legible robot navigation. We reviewed 18 articles regarding legible 
+robot behavior and present the conclusions from our own research. We 
+found three important factors for legible robot navigation: straight 
+lines, stereo-typical motions and the use of additional gestures.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2013</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>HAL Archives Ouvertes</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://hal.archives-ouvertes.fr/hal-01684307">https://hal.archives-ouvertes.fr/hal-01684307</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/4/2019, 11:37:10 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Bristol, United Kingdom</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>International Conference on Social Robotics - Workshop Embodied Communication of Goals and Intentions</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>human-aware navigation</li>
+					<li>intend expressive navigation</li>
+					<li>legibility</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_FJ8WJ3Z5">HAL PDF Full Text					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_EW4K9NEU" class="item conferencePaper">
+			<h2>Increasing perceived value between human and robots — Measuring legibility in human aware navigation</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>C. Lichtenthäler</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>T. Lorenz</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>M. Karg</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>A. Kirsch</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Robots will more and more enter our daily life. In order to 
+increase their acceptance it is necessary that their movements and 
+behavior are predictable. With our present experiment we assess the 
+acceptance of autonomous robots in human working and living 
+environments. As a specific indicator we define legibility as an 
+important prerequisite for user acceptance. In a simulator study 
+participants rated the navigation behavior of a robot with regard to 
+several aspects of legibility. Results show that Human Aware Navigation 
+is a method to increase the perceived value of robot navigation 
+behavior.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>May 2012</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>89-94</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2012 IEEE Workshop on Advanced Robotics and its Social Impacts (ARSO)</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2012 IEEE Workshop on Advanced Robotics and its Social Impacts (ARSO)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ARSO.2012.6213405">10.1109/ARSO.2012.6213405</a></td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Trajectory</li>
+					<li>Navigation</li>
+					<li>path planning</li>
+					<li>Robots</li>
+					<li>human-robot interaction</li>
+					<li>Humans</li>
+					<li>Safety</li>
+					<li>autonomous robot acceptance</li>
+					<li>human aware navigation method</li>
+					<li>human-robot perceived value</li>
+					<li>legibility measurement</li>
+					<li>Observers</li>
+					<li>Reliability</li>
+					<li>robot navigation behavior</li>
+					<li>user acceptance</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_PU7GTCMP">Submitted Version					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_SX85CXRY" class="item journalArticle">
+			<h2>Methodology &amp; Themes of Human-Robot Interaction: A Growing Research Field</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Kerstin Dautenhahn</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>This article discusses challenges of Human-Robot Interaction, 
+which is a highly inter- and multidisciplinary area. Themes that are 
+important in current research in this lively and growing field are 
+identified and selected work relevant to these themes is discussed.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>March 1, 2007</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Methodology &amp; Themes of Human-Robot Interaction</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>SAGE Journals</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://doi.org/10.5772/5702">https://doi.org/10.5772/5702</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/4/2019, 10:42:52 AM</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>4</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>15</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>International Journal of Advanced Robotic Systems</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.5772/5702">10.5772/5702</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>1</td>
+					</tr>
+					<tr>
+					<th>Journal Abbr</th>
+						<td>International Journal of Advanced Robotic Systems</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1729-8814</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_DI9GMNQ3">SAGE PDF Full Text					</li>
+				</ul>
+			</li>
+
+		</ul>
+	
+</body></html>
