@@ -1,42 +1,261 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Human-aware/social Navigation survey</title>
-  </head>
-  <body>
-    <h2> List of papers/reports </h2>
-    <dl>
-      <dt><a href="files/survey.html">All papers</a></dt>
-      <p><dd><a href="files/existing_survyes_and_reviews.html">Some surveys and reviews</a></dd></p>
-      <p><dd><a href="files/studies_and_HRI_2020.html">Studies</a></dd></p>
-      <p>
-        <dd>
-          <a href="files/indoor.html">Indoor contexts</a>
-          <dl><dt>
-            <p><dd><a href="files/indoor_prx.html">Proxemics_only</a></dd></p>
-            <p><dd><a href="files/indoor_mc.html">Multiple criteria</a></dd></p>
-            <p><dd><a href="files/indoor_dm_and_learning.html">Decision making and learning</a></dd></p>
-            <p><dd><a href="files/indoor_others.html">Others</a></dd></p>
-          </dt></dl>
-      </dd>
-      </p>
-      <p>
-        <dd>
-          <a href="files/outdoor.html">Outdoor contexts</a>
-          <dl><dt>
-            <p><dd><a href="files/outdoor_mc.html">Multiple criteria</a></dd></p>
-            <p><dd><a href="files/outdoor_dm_and_learning.html">Decision making and learning</a></dd></p>
-            <p><dd><a href="files/outdoor_others.html">Others</a></dd></p>
-          </dt></dl>
-      </dd>
-      </p>
-      <p><dd><a href="files/human_predictions_and_tracking.html">Human prediction and tracking</a></dd></p>
-      <p><dd><a href="files/sim.html">Simulators</a></dd></p>
-      <p><dd><a href="files/drones.html">Social Navigation in Drones</a></dd></p>
+<head>
+<style>
+body {
+  margin: 0;
+}
 
-    </dl>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
 
-    </body>
-    </html>
-  </body>
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+
+}
+.internal {
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+<ul>
+  <!-- <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li> -->
+  <div class="container" id="myDIV">
+    <button type="button" value="134" class="btn btn-light" data-toggle="collapse" data-target="#demo" onclick="myFunction(this)" id="button00">All Papers</button>
+    <span class="js-textEdit badge bg-info rounded-pill" data-text='' id="span00">134</span>
+    <div id="demo" class="collapse">
+      <ol class="list-group list-group-flush">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <button type="button" class="btn btn-light" value="62" onclick="myFunction(this)" data-toggle="collapse" data-target="#submenu" id="button01">Indoor</button>
+            <span class="js-textEdit badge bg-info rounded-pill" data-text='' id="span01">62</span>
+            <div id="submenu" class="collapse">
+              <div class="section left col-xs-2">
+                <ol class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <button type="button" class="btn btn-light" onclick="myFunction(this)" id="button02">Proxemics only</button>
+                      <span class="js-textEdit badge bg-info rounded-pill" data-text=''>7</span>
+                    </div>
+                  </li>
+
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <button type="button" class="btn btn-light" onclick="myFunction(this)" id="button03">Multiple criteria</button>
+                      <span class="js-textEdit badge bg-info rounded-pill" data-text=''>27</span>
+                    </div>
+                  </li>
+
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <button type="button" class="btn btn-light" onclick="myFunction(this)" id="button04">Decision Making and learning</button>
+                      <span class="js-textEdit badge bg-info rounded-pill" data-text=''>7</span>
+                    </div>
+                  </li>
+
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <button type="button" class="btn btn-light" onclick="myFunction(this)" id="button05">Others</button>
+                      <span class="js-textEdit badge bg-info rounded-pill" data-text=''>21</span>
+                    </div>
+                  </li>
+
+                </ol>
+              </div>
+            </div>
+          </div>
+          </li>
+
+
+          <!-- li block -->
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <button type="button" class="btn btn-light" value="17" onclick="myFunction(this)" data-toggle="collapse" data-target="#submenu2" id="button06">Outdoor</button>
+              <span class="js-textEdit badge bg-info rounded-pill" data-text='' id="span06">17</span>
+              <div id="submenu2" class="collapse">
+                <div class="section left col-xs-2">
+                  <ol class="list-group list-group-flush">
+
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <button type="button" class="btn btn-light" onclick="myFunction(this)" id="button07">Multiple criteria</button>
+                        <span class="js-textEdit badge bg-info rounded-pill" data-text=''>4</span>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <button type="button" class="btn btn-light" onclick="myFunction(this)" id="button08">Decision Making and learning</button>
+                        <span class="js-textEdit badge bg-info rounded-pill" data-text=''>10</span>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <button type="button" class="btn btn-light" onclick="myFunction(this)" id="button09">Others</button>
+                        <span class="js-textEdit badge bg-info rounded-pill" data-text=''>3</span>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- li block -->
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <button type="button" class="btn btn-light" value="14" onclick="myFunction(this)" data-toggle="collapse" id="button10">Some surveys and reviews</button>
+              <span class="js-textEdit badge bg-info rounded-pill" data-text=''>5</span>
+            </div>
+          </li>
+
+          <!-- li block -->
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <button type="button" class="btn btn-light" value="14" onclick="myFunction(this)" data-toggle="collapse" id="button11">Studies</button>
+              <span class="js-textEdit badge bg-info rounded-pill" data-text=''>17</span>
+              </div>
+          </li>
+
+          <!-- li block -->
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <button type="button" class="btn btn-light" value="14" onclick="myFunction(this)" data-toggle="collapse" id="button12">Human prediction and tracking</button>
+              <span class="js-textEdit badge bg-info rounded-pill" data-text=''>20</span>
+              </div>
+          </li>
+
+          <!-- li block -->
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <button type="button" class="btn btn-light" value="14" onclick="myFunction(this)" data-toggle="collapse" id="button13">Simulators</button>
+              <span class="js-textEdit badge bg-info rounded-pill" data-text=''>1</span>
+              </div>
+          </li>
+
+          <!-- li block -->
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <button type="button" class="btn btn-light" value="14" onclick="myFunction(this)" data-toggle="collapse" id="button14">Social Navigation in Drones</button>
+              <span class="js-textEdit badge bg-info rounded-pill" data-text=''>10</span>
+              </div>
+          </li>
+
+        </ol>
+    </div>
+  </div>
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;height:100vh" id="content">
+  <!-- <object type="text/html" data="files/survey/survey_index.html" width="100%" height="100%"></object> -->
+  <!-- <iframe src="files/survey/survey_index.html" style="width:100%; height:100%; overflow: hidden; border:none;" scrolling="yes"  seamless="seamless"></iframe> -->
+</div>
+
+<script>
+function myFunction(num) {
+  var x = document.getElementById("myDIV");
+  var spans = x.getElementsByTagName("span");
+  var buttons = x.getElementsByTagName("button");
+
+  let span_elem = "";
+  for(i=0;i<spans.length;i++){
+    if(num.id.slice(-2) == spans[i].id.slice(-2)){
+      span_elem = spans[i];
+      break;
+    }
+  }
+  if (span_elem.innerHTML === num.value) {
+    span_elem.innerHTML = '';
+  } else {
+    span_elem.innerHTML = num.value;
+  }
+
+  switch (num.id) {
+    case 'button00':
+      document.getElementById("content").innerHTML='<iframe src="files/survey/survey_index.html" style="width:100%; height:100%; overflow: hidden; border:none;" scrolling="yes"  seamless="seamless"></iframe>';
+      break;
+    case 'button01':
+      document.getElementById("content").innerHTML='<iframe src="files/indoor/indoor_index.html" style="width:100%; height:100%; overflow: hidden; border:none;" scrolling="yes"  seamless="seamless"></iframe>';
+      break;
+    case 'button02':
+      document.getElementById("content").innerHTML='<iframe src="files/indoor_prx/indoor_prx_index.html" style="width:100%; height:100%; overflow: hidden; border:none;" scrolling="yes"  seamless="seamless"></iframe>';
+      break;
+    case 'button03':
+      document.getElementById("content").innerHTML='<iframe src="files/indoor_mc/indoor_mc_index.html" style="width:100%; height:100%; overflow: hidden; border:none;" scrolling="yes"  seamless="seamless"></iframe>';
+      break;
+    case 'button04':
+      document.getElementById("content").innerHTML='<iframe src="files/indoor_dm_and_learning/indoor_dm_and_learning_index.html" style="width:100%; height:100%; overflow: hidden; border:none;" scrolling="yes"  seamless="seamless"></iframe>';
+      break;
+    case 'button05':
+      document.getElementById("content").innerHTML='<iframe src="files/indoor_others/indoor_others_index.html" style="width:100%; height:100%; overflow: hidden; border:none;" scrolling="yes"  seamless="seamless"></iframe>';
+      break;
+    case 'button06':
+      document.getElementById("content").innerHTML='<iframe src="files/outdoor/outdoor_index.html" style="width:100%; height:100%; overflow: hidden; border:none;" scrolling="yes"  seamless="seamless"></iframe>';
+      break;
+    case 'button07':
+      document.getElementById("content").innerHTML='<iframe src="files/outdoor_mc/outdoor_mc_index.html" style="width:100%; height:100%; overflow: hidden; border:none;" scrolling="yes"  seamless="seamless"></iframe>';
+      break;
+    case 'button08':
+      document.getElementById("content").innerHTML='<iframe src="files/outdoor_dm_and_learning/outdoor_dm_and_learning_index.html" style="width:100%; height:100%; overflow: hidden; border:none;" scrolling="yes"  seamless="seamless"></iframe>';
+      break;
+    case 'button09':
+      document.getElementById("content").innerHTML='<iframe src="files/outdoor_others/outdoor_others_index.html" style="width:100%; height:100%; overflow: hidden; border:none;" scrolling="yes"  seamless="seamless"></iframe>';
+      break;
+    case 'button10':
+      document.getElementById("content").innerHTML='<iframe src="files/existing_survyes_and_reviews/existing_survyes_and_reviews_index.html" style="width:100%; height:100%; overflow: hidden; border:none;" scrolling="yes"  seamless="seamless"></iframe>';
+      break;
+    case 'button11':
+      document.getElementById("content").innerHTML='<iframe src="files/studies/studies_index.html" style="width:100%; height:100%; overflow: hidden; border:none;" scrolling="yes"  seamless="seamless"></iframe>';
+      break;
+    case 'button12':
+      document.getElementById("content").innerHTML='<iframe src="files/human_predictions_and_tracking/human_predictions_and_tracking_index.html" style="width:100%; height:100%; overflow: hidden; border:none;" scrolling="yes"  seamless="seamless"></iframe>';
+      break;
+    case 'button13':
+      document.getElementById("content").innerHTML='<iframe src="files/sim/sim_index.html" style="width:100%; height:100%; overflow: hidden; border:none;" scrolling="yes"  seamless="seamless"></iframe>';
+      break;
+    case 'button14':
+      document.getElementById("content").innerHTML='<iframe src="files/drones/drones_index.html" style="width:100%; height:100%; overflow: hidden; border:none;" scrolling="yes"  seamless="seamless"></iframe>';
+      break;
+    default:
+
+  }
+}
+// jQuery('button').click( function(e) {
+//     jQuery('.collapse').collapse('hide');
+// });
+</script>
+
+</body>
 </html>
