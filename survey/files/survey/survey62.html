@@ -1,12 +1,4 @@
-import codecs
-import mmap
-import io
-import os
-import sys
-import glob
-
-def seperate_papers_from_html(page_name=None):
-  head_info = """<!DOCTYPE html>
+<!DOCTYPE html>
   <html><head>
   		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   		<title>Zotero Report</title>
@@ -21,98 +13,105 @@ def seperate_papers_from_html(page_name=None):
   	</head>
   	<body>
   		<ul class="report combineChildItems">
-  """
+  			<li id="item_5V8XSNN9" class="item bookSection">
+			<h2>Knowing You, Seeing Me: Investigating User Preferences in Drone-Human Acknowledgement</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book Section</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Walther Jensen</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Simon Hansen</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Hendrik Knoche</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>In the past, human proxemics research has poorly predicted 
+human robot interaction distances. This paper presents three studies on 
+drone gestures to acknowledge human presence and clarify suitable 
+acknowledging distances. We evaluated four drone gestures based on 
+non-verbal human greetings. The gestures included orienting towards the 
+counterpart and salutation gestures. We tested these individually and in
+ combination to create a feeling of acknowledgement in people. Our users
+ preferred being acknowledged from two meters away but gestures were 
+also effective from four meters. Rotating the drone towards the user 
+elicited a higher degree of acknowledgement than without. We conclude 
+with a set design guidelines for drone gestures.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>April 21, 2018</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Knowing You, Seeing Me</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>ACM Digital Library</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://doi.org/10.1145/3173574.3173939">https://doi.org/10.1145/3173574.3173939</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/30/2021, 1:00:00 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>New York, NY, USA</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Association for Computing Machinery</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-4503-5620-6</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>1–12</td>
+					</tr>
+					<tr>
+					<th>Book Title</th>
+						<td>Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>proxemics</li>
+					<li>hri</li>
+					<li>uav</li>
+					<li>acknowledgement</li>
+					<li>drone</li>
+					<li>drone gesture</li>
+					<li>hdi</li>
+					<li>human-drone interaction</li>
+					<li>quadcopter</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_GC7RJ9FI">Full Text PDF					</li>
+				</ul>
+			</li>
+</ul>
 
-  end_info = """</ul>
-
-  </body></html>"""
-
-
-  count = 0
-  change = False
-  new_file = False
-  directory = page_name
-  try:
-      os.stat(directory)
-  except:
-      os.mkdir(directory)
-  prev_line = ''
-  with open(directory+".html", "r", encoding='utf-8') as f:
-      text= f.readlines()
-      Html_file = ''
-      for lines in text:
-          if '<h2>' in lines:
-              Html_file= open(directory+"/"+directory+str(count)+".html","w",encoding="utf-8")
-              new_file = True
-              change = False
-              Html_file.write(head_info)
-              Html_file.write(prev_line)
-              count+=1
-          if '</li>' in lines:
-              if '</ul>' in prev_line:
-                  change = True
-          if count > 0 and change == False:
-              Html_file.write(lines)
-          elif change == True and new_file == True:
-              Html_file.write(lines)
-              Html_file.write(end_info)
-              new_file = False
-              Html_file.close()
-          prev_line = lines
-  print('Extracted '+str(count)+' papers')
-
-def generate_index_from_html(page_name=None):
-  head_info = """<!doctype html>
-  <html>
-    <head>
-      <title>Human-aware/social Navigation survey</title>
-    </head>
-    <body>
-  	<ol type="1">
-  """
-  end_info = """		</ol>
-  		</body>
-  	</html>
-  """
-  directory = page_name
-  try:
-      os.stat(directory)
-  except:
-      os.mkdir(directory)
-
-  replacement = ""
-  count=0
-  with open(directory+".html", "r", encoding='utf-8') as f:
-      text= f.readlines()
-      Html_file = ''
-      Html_file= open(directory+"/"+directory+"_index.html","w",encoding="utf-8")
-      Html_file.write(head_info)
-      start = False
-      for lines in text:
-          if '<h2>' in lines:
-            start = True
-          if start:
-            temp = lines.replace('<h2>','<li><a href = '+directory + str(count)+'.html>')
-            temp = temp.replace('</h2>','</a></li>')
-            Html_file.write(temp)
-          if '</h2>' in lines:
-            start = False
-            count += 1
-      Html_file.write(end_info)
-
-
-
-if __name__ == "__main__":
-  if len(sys.argv) < 2:
-    print('Please select the html file to extract')
-    files = glob.glob('*.html')
-    for i in range(0,len(files)):
-      print(str(i)+" : "+files[i])
-    f_num = int(input())
-    seperate_papers_from_html(page_name=files[f_num][:-5])
-    generate_index_from_html(page_name=files[f_num][:-5])
-  elif len(sys.argv) == 2:
-    seperate_papers_from_html(page_name=sys.argv[1][:-5])
-    generate_index_from_html(page_name=sys.argv[1][:-5])
-  else:
-    print('wrong way to run the script !')
+  </body></html>

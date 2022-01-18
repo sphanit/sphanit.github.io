@@ -1,12 +1,4 @@
-import codecs
-import mmap
-import io
-import os
-import sys
-import glob
-
-def seperate_papers_from_html(page_name=None):
-  head_info = """<!DOCTYPE html>
+<!DOCTYPE html>
   <html><head>
   		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   		<title>Zotero Report</title>
@@ -21,98 +13,103 @@ def seperate_papers_from_html(page_name=None):
   	</head>
   	<body>
   		<ul class="report combineChildItems">
-  """
+  			<li id="item_CYED6DWE" class="item conferencePaper">
+			<h2>Show me your moves! Conveying navigation intention of a mobile robot to humans</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alyxander David May</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Christian Dondrup</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Marc Hanheide</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>When humans and mobile robots share the same space, one of 
+their challenges is to navigate around each other and manage their 
+mutual navigational intents. While humans have developed excellent 
+skills in inferring their counterpart's intentions via a number of 
+implicit and non-verbal cues, making navigation also in crowds an ease, 
+this kind of effective and efficient communication often falls short in 
+human-robot encounters. In this paper, two alternative approaches to 
+convey navigational intent of a mobile robot to humans in a shared 
+environment are proposed and analysed. The first is utilising 
+anthropomorphic features of the mobile robot to realise an implicit 
+joint attention using gaze to represent the direction of navigational 
+intent. In the second approach, a more technical design adopting the 
+semantics of car's turn indicators, has been implemented. The paper 
+compares both approaches with each other and against a control behaviour
+ without any communication of intent. Both approaches show statistically
+ significant differences in comparison to the control behaviour. 
+However, the second approach using indicators has shown as being more 
+effective in conveying the intent and also has a higher positive impact 
+on the comfort of the humans encountering the robot.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>Sep. 2015</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>1-6</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2015 European Conference on Mobile Robots (ECMR)</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2015 European Conference on Mobile Robots (ECMR)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/ECMR.2015.7324049">10.1109/ECMR.2015.7324049</a></td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>mobile robots</li>
+					<li>Navigation</li>
+					<li>Mobile robots</li>
+					<li>human-robot interaction</li>
+					<li>humans</li>
+					<li>Magnetic heads</li>
+					<li>mobile robot</li>
+					<li>navigation</li>
+					<li>navigation intention</li>
+					<li>navigational intent</li>
+					<li>nonverbal cues</li>
+					<li>Robot sensing systems</li>
+					<li>Semantics</li>
+					<li>Visualization</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_X8G854AG">IEEE Xplore Abstract Record					</li>
+					<li id="item_4522WGPH">May et al. - 2015 - Show me your moves! Conveying navigation intention.pdf					</li>
+				</ul>
+			</li>
+</ul>
 
-  end_info = """</ul>
-
-  </body></html>"""
-
-
-  count = 0
-  change = False
-  new_file = False
-  directory = page_name
-  try:
-      os.stat(directory)
-  except:
-      os.mkdir(directory)
-  prev_line = ''
-  with open(directory+".html", "r", encoding='utf-8') as f:
-      text= f.readlines()
-      Html_file = ''
-      for lines in text:
-          if '<h2>' in lines:
-              Html_file= open(directory+"/"+directory+str(count)+".html","w",encoding="utf-8")
-              new_file = True
-              change = False
-              Html_file.write(head_info)
-              Html_file.write(prev_line)
-              count+=1
-          if '</li>' in lines:
-              if '</ul>' in prev_line:
-                  change = True
-          if count > 0 and change == False:
-              Html_file.write(lines)
-          elif change == True and new_file == True:
-              Html_file.write(lines)
-              Html_file.write(end_info)
-              new_file = False
-              Html_file.close()
-          prev_line = lines
-  print('Extracted '+str(count)+' papers')
-
-def generate_index_from_html(page_name=None):
-  head_info = """<!doctype html>
-  <html>
-    <head>
-      <title>Human-aware/social Navigation survey</title>
-    </head>
-    <body>
-  	<ol type="1">
-  """
-  end_info = """		</ol>
-  		</body>
-  	</html>
-  """
-  directory = page_name
-  try:
-      os.stat(directory)
-  except:
-      os.mkdir(directory)
-
-  replacement = ""
-  count=0
-  with open(directory+".html", "r", encoding='utf-8') as f:
-      text= f.readlines()
-      Html_file = ''
-      Html_file= open(directory+"/"+directory+"_index.html","w",encoding="utf-8")
-      Html_file.write(head_info)
-      start = False
-      for lines in text:
-          if '<h2>' in lines:
-            start = True
-          if start:
-            temp = lines.replace('<h2>','<li><a href = '+directory + str(count)+'.html>')
-            temp = temp.replace('</h2>','</a></li>')
-            Html_file.write(temp)
-          if '</h2>' in lines:
-            start = False
-            count += 1
-      Html_file.write(end_info)
-
-
-
-if __name__ == "__main__":
-  if len(sys.argv) < 2:
-    print('Please select the html file to extract')
-    files = glob.glob('*.html')
-    for i in range(0,len(files)):
-      print(str(i)+" : "+files[i])
-    f_num = int(input())
-    seperate_papers_from_html(page_name=files[f_num][:-5])
-    generate_index_from_html(page_name=files[f_num][:-5])
-  elif len(sys.argv) == 2:
-    seperate_papers_from_html(page_name=sys.argv[1][:-5])
-    generate_index_from_html(page_name=sys.argv[1][:-5])
-  else:
-    print('wrong way to run the script !')
+  </body></html>

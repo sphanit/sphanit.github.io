@@ -1,12 +1,4 @@
-import codecs
-import mmap
-import io
-import os
-import sys
-import glob
-
-def seperate_papers_from_html(page_name=None):
-  head_info = """<!DOCTYPE html>
+<!DOCTYPE html>
   <html><head>
   		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   		<title>Zotero Report</title>
@@ -21,98 +13,119 @@ def seperate_papers_from_html(page_name=None):
   	</head>
   	<body>
   		<ul class="report combineChildItems">
-  """
+  			<li id="item_395GNS57" class="item conferencePaper">
+			<h2>Human Aware Robot Navigation in Semantically Annotated Domestic Environments</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Ioannis Kostavelis</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Dimitrios Giakoumis</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Sotiris Malassiotis</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Dimitrios Tzovaras</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Margherita Antona</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Constantine Stephanidis</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>In the near future, the seamless human robot cohabitation can 
+be achieved as long as the robots to be released in the market attain 
+socially acceptable behavior. Therefore, robots need to learn and react 
+appropriately, should they be able to share the same space with people 
+and to adapt their operation to human’s activity. The goal of this work 
+is to introduce a human aware global path planning solution for robot 
+navigation that considers the humans presence in a domestic environment.
+ Towards this direction, hierarchical semantic maps are built upon 
+metric maps where the human presence is modelled using frequently 
+visited standing positions considering also the proxemics theory. During
+ the human’s perambulation within the domestic environment the most 
+probable humans pathways are calculated and modeled with sequential, yet
+ descending Gaussian kernel’s. This way, the robot reacts with safety 
+when operating in a domestic environment taking into consideration the 
+human presence and the physical obstacles. The method has been evaluated
+ on a simulated environment, yet on realistic acquired data modeling a 
+real house space and exhibited remarkable performance.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2016</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Springer Link</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Cham</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Springer International Publishing</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-3-319-40244-4</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>414-423</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>Lecture Notes in Computer Science</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>Universal Access in Human-Computer Interaction. Interaction Techniques and Environments</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1007/978-3-319-40244-4_40">10.1007/978-3-319-40244-4_40</a></td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Human robot cohabitation</li>
+					<li>Metric mapping</li>
+					<li>Path planning</li>
+					<li>Safe navigation</li>
+					<li>Semantic mapping</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_5L5BWQG4">Springer Full Text PDF					</li>
+				</ul>
+			</li>
+</ul>
 
-  end_info = """</ul>
-
-  </body></html>"""
-
-
-  count = 0
-  change = False
-  new_file = False
-  directory = page_name
-  try:
-      os.stat(directory)
-  except:
-      os.mkdir(directory)
-  prev_line = ''
-  with open(directory+".html", "r", encoding='utf-8') as f:
-      text= f.readlines()
-      Html_file = ''
-      for lines in text:
-          if '<h2>' in lines:
-              Html_file= open(directory+"/"+directory+str(count)+".html","w",encoding="utf-8")
-              new_file = True
-              change = False
-              Html_file.write(head_info)
-              Html_file.write(prev_line)
-              count+=1
-          if '</li>' in lines:
-              if '</ul>' in prev_line:
-                  change = True
-          if count > 0 and change == False:
-              Html_file.write(lines)
-          elif change == True and new_file == True:
-              Html_file.write(lines)
-              Html_file.write(end_info)
-              new_file = False
-              Html_file.close()
-          prev_line = lines
-  print('Extracted '+str(count)+' papers')
-
-def generate_index_from_html(page_name=None):
-  head_info = """<!doctype html>
-  <html>
-    <head>
-      <title>Human-aware/social Navigation survey</title>
-    </head>
-    <body>
-  	<ol type="1">
-  """
-  end_info = """		</ol>
-  		</body>
-  	</html>
-  """
-  directory = page_name
-  try:
-      os.stat(directory)
-  except:
-      os.mkdir(directory)
-
-  replacement = ""
-  count=0
-  with open(directory+".html", "r", encoding='utf-8') as f:
-      text= f.readlines()
-      Html_file = ''
-      Html_file= open(directory+"/"+directory+"_index.html","w",encoding="utf-8")
-      Html_file.write(head_info)
-      start = False
-      for lines in text:
-          if '<h2>' in lines:
-            start = True
-          if start:
-            temp = lines.replace('<h2>','<li><a href = '+directory + str(count)+'.html>')
-            temp = temp.replace('</h2>','</a></li>')
-            Html_file.write(temp)
-          if '</h2>' in lines:
-            start = False
-            count += 1
-      Html_file.write(end_info)
-
-
-
-if __name__ == "__main__":
-  if len(sys.argv) < 2:
-    print('Please select the html file to extract')
-    files = glob.glob('*.html')
-    for i in range(0,len(files)):
-      print(str(i)+" : "+files[i])
-    f_num = int(input())
-    seperate_papers_from_html(page_name=files[f_num][:-5])
-    generate_index_from_html(page_name=files[f_num][:-5])
-  elif len(sys.argv) == 2:
-    seperate_papers_from_html(page_name=sys.argv[1][:-5])
-    generate_index_from_html(page_name=sys.argv[1][:-5])
-  else:
-    print('wrong way to run the script !')
+  </body></html>

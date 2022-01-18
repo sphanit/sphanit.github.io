@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .btn:focus, .btn:active:focus, .btn.active:focus {
+      box-shadow: none !important;
+      }
+      .row {
+        height: 100%;
+      }
+      .html  {
+         width: 100%;
+         height: 100%;
+         margin: 0px;
+         padding: 0px;
+         overflow-x: hidden;
+      }
+      .no-padding {
+          padding-left: 0;
+          padding-right: 0;
+      }
+
+  </style>
+  </head>
+  <body>
+    <div class="section left col-xs-2">
+      <button type="button" value="134" class="btn btn-light" data-toggle="collapse" data-target="#demo" onclick="myFunction(this.value)">All Papers</button>
+      <span class="js-textEdit badge bg-info rounded-pill" data-text='' id="myDIV">134</span>
+      <div id="demo" class="collapse">
+        <div class="section left col-xs-2">
+          <ol class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <button type="button" class="btn btn-light" value="14" onclick="myFunction1(this.value)" data-toggle="collapse" data-target="#submenu">Indoor</button>
+                <span class="js-textEdit badge bg-info rounded-pill" data-text='' id="myDIV1">14</span>
+                <div id="submenu" class="collapse">
+                  <div class="section left col-xs-2">
+                    <ol class="list-group list-group-flush">
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <button type="button" class="btn btn-light">Proxemics only</button>
+                        </div>
+                      </li>
+
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <button type="button" class="btn btn-light">Multiple criteria</button>
+                        </div>
+                      </li>
+
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <button type="button" class="btn btn-light">Decision Making and learning</button>
+                        </div>
+                      </li>
+
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <button type="button" class="btn btn-light">Others</button>
+                        </div>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- li block -->
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <button type="button" class="btn btn-light" value="16" onclick="myFunction2(this.value)" data-toggle="collapse" data-target="#submenu2">Outdoor</button>
+                <span class="js-textEdit badge bg-info rounded-pill" data-text='' id="myDIV2">16</span>
+                <div id="submenu2" class="collapse">
+                  <div class="section left col-xs-2">
+                    <ol class="list-group list-group-flush">
+
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <button type="button" class="btn btn-light">Multiple criteria</button>
+                        </div>
+                      </li>
+
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <button type="button" class="btn btn-light">Decision Making and learning</button>
+                        </div>
+                      </li>
+
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <button type="button" class="btn btn-light">Others</button>
+                        </div>
+                      </li>
+
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- li block -->
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <button type="button" class="btn btn-light" value="14" onclick="myFunction1(this.value)" data-toggle="collapse" data-target="#submenu">Some surveys and reviews</button>
+                <span class="js-textEdit badge bg-info rounded-pill" data-text='' id="myDIV1">14</span>
+              </div>
+            </li>
+
+            <!-- li block -->
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <button type="button" class="btn btn-light" value="14" onclick="myFunction1(this.value)" data-toggle="collapse" data-target="#submenu">Studies</button>
+                <span class="js-textEdit badge bg-info rounded-pill" data-text='' id="myDIV1">14</span>
+                </div>
+            </li>
+
+            <!-- li block -->
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <button type="button" class="btn btn-light" value="14" onclick="myFunction1(this.value)" data-toggle="collapse" data-target="#submenu">Human prediction and tracking</button>
+                <span class="js-textEdit badge bg-info rounded-pill" data-text='' id="myDIV1">14</span>
+                </div>
+            </li>
+
+            <!-- li block -->
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <button type="button" class="btn btn-light" value="14" onclick="myFunction1(this.value)" data-toggle="collapse" data-target="#submenu">Simulators</button>
+                <span class="js-textEdit badge bg-info rounded-pill" data-text='' id="myDIV1">14</span>
+                </div>
+            </li>
+
+            <!-- li block -->
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <button type="button" class="btn btn-light" value="14" onclick="myFunction1(this.value)" data-toggle="collapse" data-target="#submenu">Social Navigation in Drones</button>
+                <span class="js-textEdit badge bg-info rounded-pill" data-text='' id="myDIV1">14</span>
+                </div>
+            </li>
+
+          </ol>
+        </div>
+        </div>
+      </div>
+      <div class="section right col-xs-10" id="content">
+        test sutff here
+      </div>
+
+  <script>
+  function myFunction(num) {
+    var x = document.getElementById("myDIV");
+    if (x.innerHTML === num) {
+      x.innerHTML = '';
+    } else {
+      x.innerHTML = num;
+    }
+    document.getElementById("content").innerHTML='<object type="text/html" data="files/survey/survey_index.html" ></object>';
+  }
+  </script>
+
+  <script>
+  function myFunction1(num) {
+    var x = document.getElementById("myDIV1");
+    if (x.innerHTML === num) {
+      x.innerHTML = '';
+    } else {
+      x.innerHTML = num;
+    }
+  }
+  </script>
+
+  <script>
+  function myFunction2(num) {
+    var x = document.getElementById("myDIV2");
+    if (x.innerHTML === num) {
+      x.innerHTML = '';
+    } else {
+      x.innerHTML = num;
+    }
+  }
+  </script>
+
+  </body>
+</html>

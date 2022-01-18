@@ -1,12 +1,4 @@
-import codecs
-import mmap
-import io
-import os
-import sys
-import glob
-
-def seperate_papers_from_html(page_name=None):
-  head_info = """<!DOCTYPE html>
+<!DOCTYPE html>
   <html><head>
   		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   		<title>Zotero Report</title>
@@ -21,98 +13,107 @@ def seperate_papers_from_html(page_name=None):
   	</head>
   	<body>
   		<ul class="report combineChildItems">
-  """
+  			<li id="item_9XVL7E72" class="item conferencePaper">
+			<h2>Inverse Reinforcement Learning algorithms and features for robot navigation in crowds: An experimental comparison</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>D. Vasquez</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>B. Okal</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>K. O. Arras</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>1341-1346</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>Sep. 2014</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/IROS.2014.6942731">10.1109/IROS.2014.6942731</a></td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2014 IEEE/RSJ International Conference on Intelligent Robots and Systems</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>For mobile robots which operate in human populated 
+environments, modeling social interactions is key to understand and 
+reproduce people's behavior. A promising approach to this end is Inverse
+ Reinforcement Learning (IRL) as it allows to model the factors that 
+motivate people's actions instead of the actions themselves. A crucial 
+design choice in IRL is the selection of features that encode the 
+agent's context. In related work, features are typically chosen ad hoc 
+without systematic evaluation of the alternatives and their actual 
+impact on the robot's task. In this paper, we introduce a new software 
+framework to systematically investigate the effect features and learning
+ algorithms used in the literature. We also present results for the task
+ of socially compliant robot navigation in crowds, evaluating two 
+different IRL approaches and several feature sets in large-scale 
+simulations. The results are benchmarked according to a proposed set of 
+objective and subjective performance metrics.</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2014 IEEE/RSJ International Conference on Intelligent Robots and Systems</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Inverse Reinforcement Learning algorithms and features for robot navigation in crowds</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/12/2019, 4:52:56 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Airports</li>
+					<li>control engineering computing</li>
+					<li>inverse reinforcement learning algorithm</li>
+					<li>IRL approach</li>
+					<li>learning (artificial intelligence)</li>
+					<li>mobile robots</li>
+					<li>Navigation</li>
+					<li>objective performance metrics</li>
+					<li>path planning</li>
+					<li>robot navigation</li>
+					<li>Robots</li>
+					<li>Silicon</li>
+					<li>social interaction modeling</li>
+					<li>software framework</li>
+					<li>subjective performance metrics</li>
+					<li>Tin</li>
+					<li>Vectors</li>
+					<li>Vehicles</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_B4BQIBLS">IEEE Xplore Abstract Record					</li>
+					<li id="item_53UMJD3M">Submitted Version					</li>
+				</ul>
+			</li>
+</ul>
 
-  end_info = """</ul>
-
-  </body></html>"""
-
-
-  count = 0
-  change = False
-  new_file = False
-  directory = page_name
-  try:
-      os.stat(directory)
-  except:
-      os.mkdir(directory)
-  prev_line = ''
-  with open(directory+".html", "r", encoding='utf-8') as f:
-      text= f.readlines()
-      Html_file = ''
-      for lines in text:
-          if '<h2>' in lines:
-              Html_file= open(directory+"/"+directory+str(count)+".html","w",encoding="utf-8")
-              new_file = True
-              change = False
-              Html_file.write(head_info)
-              Html_file.write(prev_line)
-              count+=1
-          if '</li>' in lines:
-              if '</ul>' in prev_line:
-                  change = True
-          if count > 0 and change == False:
-              Html_file.write(lines)
-          elif change == True and new_file == True:
-              Html_file.write(lines)
-              Html_file.write(end_info)
-              new_file = False
-              Html_file.close()
-          prev_line = lines
-  print('Extracted '+str(count)+' papers')
-
-def generate_index_from_html(page_name=None):
-  head_info = """<!doctype html>
-  <html>
-    <head>
-      <title>Human-aware/social Navigation survey</title>
-    </head>
-    <body>
-  	<ol type="1">
-  """
-  end_info = """		</ol>
-  		</body>
-  	</html>
-  """
-  directory = page_name
-  try:
-      os.stat(directory)
-  except:
-      os.mkdir(directory)
-
-  replacement = ""
-  count=0
-  with open(directory+".html", "r", encoding='utf-8') as f:
-      text= f.readlines()
-      Html_file = ''
-      Html_file= open(directory+"/"+directory+"_index.html","w",encoding="utf-8")
-      Html_file.write(head_info)
-      start = False
-      for lines in text:
-          if '<h2>' in lines:
-            start = True
-          if start:
-            temp = lines.replace('<h2>','<li><a href = '+directory + str(count)+'.html>')
-            temp = temp.replace('</h2>','</a></li>')
-            Html_file.write(temp)
-          if '</h2>' in lines:
-            start = False
-            count += 1
-      Html_file.write(end_info)
-
-
-
-if __name__ == "__main__":
-  if len(sys.argv) < 2:
-    print('Please select the html file to extract')
-    files = glob.glob('*.html')
-    for i in range(0,len(files)):
-      print(str(i)+" : "+files[i])
-    f_num = int(input())
-    seperate_papers_from_html(page_name=files[f_num][:-5])
-    generate_index_from_html(page_name=files[f_num][:-5])
-  elif len(sys.argv) == 2:
-    seperate_papers_from_html(page_name=sys.argv[1][:-5])
-    generate_index_from_html(page_name=sys.argv[1][:-5])
-  else:
-    print('wrong way to run the script !')
+  </body></html>

@@ -1,12 +1,4 @@
-import codecs
-import mmap
-import io
-import os
-import sys
-import glob
-
-def seperate_papers_from_html(page_name=None):
-  head_info = """<!DOCTYPE html>
+<!DOCTYPE html>
   <html><head>
   		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   		<title>Zotero Report</title>
@@ -21,98 +13,142 @@ def seperate_papers_from_html(page_name=None):
   	</head>
   	<body>
   		<ul class="report combineChildItems">
-  """
+  			<li id="item_EEI7SWP7" class="item conferencePaper">
+			<h2>Deep Learning-based Multiple Objects Detection and Tracking System for Socially Aware Mobile Robot Navigation Framework</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Do Nam Thang</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Lan Anh Nguyen</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Pham Trung Dung</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Truong Dang Khoa</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Nguyen Huu Son</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Nguyen Tran Hiep</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Pham Van Nguyen</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Vu Duc Truong</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Dinh Hong Toan</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Nguyen Manh Hung</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Trung-Dung Ngo</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Xuan-Tung Truong</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Multiple objects (including humans) detection and tracking 
+system plays an essential role in socially aware mobile robot navigation
+ framework. Because, it provides an important input for the remaining 
+modules of the framework. In this paper, we propose an efficient 
+multiple objects detection and tracking system for mobile service robots
+ in dynamic social environments using deep learning techniques. The 
+proposed system consists of two steps: (1) multiple objects detection, 
+and (2) multiple objects tracking. In the first step, the RGB 
+image-based multiple objects detection is made use of to detect objects 
+in the mobile robot's vicinity using a convolutional neural network. In 
+the second stage of system, the detected objects are tracked using a 
+deep simple online and realtime tracking technique. The experimental 
+results indicate that, the proposed system is capable of detecting and 
+tracking multiple objects including humans, providing significant 
+information for the socially aware mobile robot navigation framework.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>November 2018</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>436-441</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2018 5th NAFOSTED Conference on Information and Computer Science (NICS)</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2018 5th NAFOSTED Conference on Information and Computer Science (NICS)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/NICS.2018.8606878">10.1109/NICS.2018.8606878</a></td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/1/2021, 5:15:48 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>learning (artificial intelligence)</li>
+					<li>mobile robots</li>
+					<li>Navigation</li>
+					<li>path planning</li>
+					<li>control engineering computing</li>
+					<li>Mobile robots</li>
+					<li>image colour analysis</li>
+					<li>object detection</li>
+					<li>service robots</li>
+					<li>Robot sensing systems</li>
+					<li>Safety</li>
+					<li>Service robots</li>
+					<li>convolutional neural nets</li>
+					<li>convolutional neural network</li>
+					<li>deep learning techniques</li>
+					<li>deep simple online tracking technique</li>
+					<li>multiple objects tracking</li>
+					<li>Object detection</li>
+					<li>object tracking</li>
+					<li>RGB image-based multiple objects detection</li>
+					<li>socially aware mobile robot navigation framework</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_XPE4X5PM">IEEE Xplore Abstract Record					</li>
+					<li id="item_U3UQB82A">Thang et al. - 2018 - Deep Learning-based Multiple Objects Detection and.pdf					</li>
+				</ul>
+			</li>
+</ul>
 
-  end_info = """</ul>
-
-  </body></html>"""
-
-
-  count = 0
-  change = False
-  new_file = False
-  directory = page_name
-  try:
-      os.stat(directory)
-  except:
-      os.mkdir(directory)
-  prev_line = ''
-  with open(directory+".html", "r", encoding='utf-8') as f:
-      text= f.readlines()
-      Html_file = ''
-      for lines in text:
-          if '<h2>' in lines:
-              Html_file= open(directory+"/"+directory+str(count)+".html","w",encoding="utf-8")
-              new_file = True
-              change = False
-              Html_file.write(head_info)
-              Html_file.write(prev_line)
-              count+=1
-          if '</li>' in lines:
-              if '</ul>' in prev_line:
-                  change = True
-          if count > 0 and change == False:
-              Html_file.write(lines)
-          elif change == True and new_file == True:
-              Html_file.write(lines)
-              Html_file.write(end_info)
-              new_file = False
-              Html_file.close()
-          prev_line = lines
-  print('Extracted '+str(count)+' papers')
-
-def generate_index_from_html(page_name=None):
-  head_info = """<!doctype html>
-  <html>
-    <head>
-      <title>Human-aware/social Navigation survey</title>
-    </head>
-    <body>
-  	<ol type="1">
-  """
-  end_info = """		</ol>
-  		</body>
-  	</html>
-  """
-  directory = page_name
-  try:
-      os.stat(directory)
-  except:
-      os.mkdir(directory)
-
-  replacement = ""
-  count=0
-  with open(directory+".html", "r", encoding='utf-8') as f:
-      text= f.readlines()
-      Html_file = ''
-      Html_file= open(directory+"/"+directory+"_index.html","w",encoding="utf-8")
-      Html_file.write(head_info)
-      start = False
-      for lines in text:
-          if '<h2>' in lines:
-            start = True
-          if start:
-            temp = lines.replace('<h2>','<li><a href = '+directory + str(count)+'.html>')
-            temp = temp.replace('</h2>','</a></li>')
-            Html_file.write(temp)
-          if '</h2>' in lines:
-            start = False
-            count += 1
-      Html_file.write(end_info)
-
-
-
-if __name__ == "__main__":
-  if len(sys.argv) < 2:
-    print('Please select the html file to extract')
-    files = glob.glob('*.html')
-    for i in range(0,len(files)):
-      print(str(i)+" : "+files[i])
-    f_num = int(input())
-    seperate_papers_from_html(page_name=files[f_num][:-5])
-    generate_index_from_html(page_name=files[f_num][:-5])
-  elif len(sys.argv) == 2:
-    seperate_papers_from_html(page_name=sys.argv[1][:-5])
-    generate_index_from_html(page_name=sys.argv[1][:-5])
-  else:
-    print('wrong way to run the script !')
+  </body></html>

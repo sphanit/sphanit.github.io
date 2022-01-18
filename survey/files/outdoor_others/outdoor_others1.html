@@ -1,12 +1,4 @@
-import codecs
-import mmap
-import io
-import os
-import sys
-import glob
-
-def seperate_papers_from_html(page_name=None):
-  head_info = """<!DOCTYPE html>
+<!DOCTYPE html>
   <html><head>
   		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   		<title>Zotero Report</title>
@@ -21,98 +13,73 @@ def seperate_papers_from_html(page_name=None):
   	</head>
   	<body>
   		<ul class="report combineChildItems">
-  """
+  			<li id="item_UM5FKJGQ" class="item journalArticle">
+			<h2>IAN: Multi-Behavior Navigation Planning for Robots in Real, Crowded Environments</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Daniel Dugas</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Juan Nieto</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Roland Siegwart</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jen Jen Chung</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>8</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>State-of-the-art approaches for robot navigation among humans 
+are typically restricted to planar movement actions. This work addresses
+ the question of whether it can be beneﬁcial to use interaction actions,
+ such as saying, touching, and gesturing, for the sake of allowing 
+robots to navigate in unstructured, crowded environments. To do so, we 
+ﬁrst identify challenging scenarios to traditional motion planning 
+methods. Based on the hypothesis that the variation in modality for 
+these scenarios calls for signiﬁcantly different planning policies, we 
+design speciﬁc navigation behaviors as interaction planners for 
+actuated, mobile robots. We further propose a high level planning 
+algorithm for multi-behavior navigation, named Interaction Actions for 
+Navigation (IAN). Through both real-world and simulated experiments, we 
+validate the selected behaviors and the high-level planning algorithm, 
+and discuss the impact of our obtained results on our stated 
+assumptions.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>1/14/2021, 11:50:50 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>1/14/2021, 11:50:50 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_KEZDDWJB">Dugas et al. - IAN Multi-Behavior Navigation Planning for Robots.pdf					</li>
+				</ul>
+			</li>
+</ul>
 
-  end_info = """</ul>
-
-  </body></html>"""
-
-
-  count = 0
-  change = False
-  new_file = False
-  directory = page_name
-  try:
-      os.stat(directory)
-  except:
-      os.mkdir(directory)
-  prev_line = ''
-  with open(directory+".html", "r", encoding='utf-8') as f:
-      text= f.readlines()
-      Html_file = ''
-      for lines in text:
-          if '<h2>' in lines:
-              Html_file= open(directory+"/"+directory+str(count)+".html","w",encoding="utf-8")
-              new_file = True
-              change = False
-              Html_file.write(head_info)
-              Html_file.write(prev_line)
-              count+=1
-          if '</li>' in lines:
-              if '</ul>' in prev_line:
-                  change = True
-          if count > 0 and change == False:
-              Html_file.write(lines)
-          elif change == True and new_file == True:
-              Html_file.write(lines)
-              Html_file.write(end_info)
-              new_file = False
-              Html_file.close()
-          prev_line = lines
-  print('Extracted '+str(count)+' papers')
-
-def generate_index_from_html(page_name=None):
-  head_info = """<!doctype html>
-  <html>
-    <head>
-      <title>Human-aware/social Navigation survey</title>
-    </head>
-    <body>
-  	<ol type="1">
-  """
-  end_info = """		</ol>
-  		</body>
-  	</html>
-  """
-  directory = page_name
-  try:
-      os.stat(directory)
-  except:
-      os.mkdir(directory)
-
-  replacement = ""
-  count=0
-  with open(directory+".html", "r", encoding='utf-8') as f:
-      text= f.readlines()
-      Html_file = ''
-      Html_file= open(directory+"/"+directory+"_index.html","w",encoding="utf-8")
-      Html_file.write(head_info)
-      start = False
-      for lines in text:
-          if '<h2>' in lines:
-            start = True
-          if start:
-            temp = lines.replace('<h2>','<li><a href = '+directory + str(count)+'.html>')
-            temp = temp.replace('</h2>','</a></li>')
-            Html_file.write(temp)
-          if '</h2>' in lines:
-            start = False
-            count += 1
-      Html_file.write(end_info)
-
-
-
-if __name__ == "__main__":
-  if len(sys.argv) < 2:
-    print('Please select the html file to extract')
-    files = glob.glob('*.html')
-    for i in range(0,len(files)):
-      print(str(i)+" : "+files[i])
-    f_num = int(input())
-    seperate_papers_from_html(page_name=files[f_num][:-5])
-    generate_index_from_html(page_name=files[f_num][:-5])
-  elif len(sys.argv) == 2:
-    seperate_papers_from_html(page_name=sys.argv[1][:-5])
-    generate_index_from_html(page_name=sys.argv[1][:-5])
-  else:
-    print('wrong way to run the script !')
+  </body></html>
