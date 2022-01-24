@@ -13,72 +13,106 @@
   	</head>
   	<body>
   		<ul class="report combineChildItems">
-  			<li id="item_XEN7H8VL" class="item conferencePaper">
-			<h2>Socially-aware robot navigation: A learning approach</h2>
+  			<li id="item_3F3ISIYA" class="item journalArticle">
+			<h2>Socially Aware Path Planning for a Flying Robot in Close Proximity of Humans</h2>
 				<table>
 					<tbody><tr>
 						<th>Type</th>
-						<td>Conference Paper</td>
+						<td>Journal Article</td>
 					</tr>
 					<tr>
 						<th class="author">Author</th>
-						<td>M. Luber</td>
+						<td>Hyung-Jin Yoon</td>
 					</tr>
 					<tr>
 						<th class="author">Author</th>
-						<td>L. Spinello</td>
+						<td>Christopher Widdowson</td>
 					</tr>
 					<tr>
 						<th class="author">Author</th>
-						<td>J. Silva</td>
+						<td>Thiago Marinho</td>
 					</tr>
 					<tr>
 						<th class="author">Author</th>
-						<td>K. O. Arras</td>
+						<td>Ranxiao Frances Wang</td>
 					</tr>
 					<tr>
-					<th>Abstract</th>
-						<td>The ability to act in a socially-aware way is a key skill for 
-robots that share a space with humans. In this paper we address the 
-problem of socially-aware navigation among people that meets objective 
-criteria such as travel time or path length as well as subjective 
-criteria such as social comfort. Opposed to model-based approaches 
-typically taken in related work, we pose the problem as an unsupervised 
-learning problem. We learn a set of dynamic motion prototypes from 
-observations of relative motion behavior of humans found in publicly 
-available surveillance data sets. The learned motion prototypes are then
- used to compute dynamic cost maps for path planning using an any-angle 
-A* algorithm. In the evaluation we demonstrate that the learned 
-behaviors are better in reproducing human relative motion in both 
-criteria than a Proxemics-based baseline method.</td>
+						<th class="author">Author</th>
+						<td>Naira Hovakimyan</td>
 					</tr>
 					<tr>
-					<th>Date</th>
-						<td>October 2012</td>
+					<th>URL</th>
+						<td><a href="https://doi.org/10.1145/3341570">https://doi.org/10.1145/3341570</a></td>
 					</tr>
 					<tr>
-					<th>Short Title</th>
-						<td>Socially-aware robot navigation</td>
+					<th>Volume</th>
+						<td>3</td>
 					</tr>
 					<tr>
-					<th>Library Catalog</th>
-						<td>IEEE Xplore</td>
+					<th>Issue</th>
+						<td>4</td>
 					</tr>
 					<tr>
 					<th>Pages</th>
-						<td>902-907</td>
+						<td>41:1–41:24</td>
 					</tr>
 					<tr>
-					<th>Proceedings Title</th>
-						<td>2012 IEEE/RSJ International Conference on Intelligent Robots and Systems</td>
+					<th>Publication</th>
+						<td>ACM Transactions on Cyber-Physical Systems</td>
 					</tr>
 					<tr>
-					<th>Conference Name</th>
-						<td>2012 IEEE/RSJ International Conference on Intelligent Robots and Systems</td>
+					<th>ISSN</th>
+						<td>2378-962X</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>September 4, 2019</td>
+					</tr>
+					<tr>
+					<th>Journal Abbr</th>
+						<td>ACM Trans. Cyber-Phys. Syst.</td>
 					</tr>
 					<tr>
 					<th>DOI</th>
-						<td><a href="http://doi.org/10.1109/IROS.2012.6385716">10.1109/IROS.2012.6385716</a></td>
+						<td><a href="http://doi.org/10.1145/3341570">10.1145/3341570</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/30/2021, 3:39:01 PM</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>October 2019</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>In this article, we present a preliminary motion planning 
+framework for a cyber-physical system consisting of a human and a flying
+ robot in vicinity. The motion planning of the flying robot takes into 
+account the human’s safety perception. We aim to determine a parametric 
+model for the human’s safety perception based on test data. We use 
+virtual reality as a safe testing environment to collect safety 
+perception data reflected on galvanic skin response (GSR) from the test 
+subjects experiencing a flying robot in their vicinity. The GSR signal 
+contains both meaningful information driven by the interaction with the 
+robot and also disturbances from unknown factors. To address the issue, 
+we use two parametric models to approximate the GSR data: (1) a function
+ of the robot’s position and velocity and (2) a random distribution. 
+Intuitively, we need to choose the more likely model given the data. 
+When GSR is statistically independent of the flying robot, then the 
+random distribution should be selected instead of the function of the 
+robot’s position and velocity. We implement the intuitive idea under the
+ framework of hidden Markov model (HMM) estimation. As a result, the 
+proposed HMM-based model improves the likelihood compared to the 
+Gaussian noise model, which does not make a distinction between relevant
+ and irrelevant samples due to unknown factors. We also present a 
+numerical optimal path planning method that considers the safety 
+perception model while ensuring spatial separation from the obstacle 
+despite the time discretization. Optimal paths generated using the 
+proposed model result in a reasonably safe distance from the human. In 
+contrast, the trajectories generated by the standard regression model 
+with the Gaussian noise assumption, without consideration of unknown 
+factors, have undesirable shapes.</td>
 					</tr>
 					<tr>
 					<th>Date Added</th>
@@ -91,29 +125,13 @@ criteria than a Proxemics-based baseline method.</td>
 				</tbody></table>
 				<h3 class="tags">Tags:</h3>
 				<ul class="tags">
-					<li>Dynamics</li>
-					<li>mobile robots</li>
-					<li>Robots</li>
-					<li>Humans</li>
-					<li>any-angle A* algorithm</li>
-					<li>Computational modeling</li>
-					<li>Context</li>
-					<li>dynamic motion prototypes</li>
-					<li>Heuristic algorithms</li>
-					<li>learning approach</li>
-					<li>path length</li>
-					<li>Prototypes</li>
-					<li>Proxemics-based baseline method</li>
-					<li>social sciences</li>
-					<li>socially-aware robot navigation</li>
-					<li>travel time</li>
-					<li>unsupervised learning</li>
-					<li>unsupervised learning problem</li>
+					<li>Human-robot interaction</li>
+					<li>hidden Markov model</li>
+					<li>optimal path planning</li>
 				</ul>
 				<h3 class="attachments">Attachments</h3>
 				<ul class="attachments">
-					<li id="item_B5T8A8YT">IEEE Xplore Abstract Record					</li>
-					<li id="item_29JPQWYC">Submitted Version					</li>
+					<li id="item_TGSTDA44">Full Text PDF					</li>
 				</ul>
 			</li>
 </ul>
