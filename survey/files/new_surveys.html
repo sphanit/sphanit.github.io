@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Zotero Report</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9Cg==">
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K">
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg==">
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_9FWUL5C6" class="item journalArticle">
+			<h2>Toward Socially Aware Person-Following Robots</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Shanee S. Honig</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Tal Oron-Gilad</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Hanan Zaichyk</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Vardit Sarne-Fleischmann</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Samuel Olatunji</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Yael Edan</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Signiﬁcant research and development has been invested in 
+technical issues related to person following. However, a systematic 
+approach for designing robotic person-following behavior that maintains 
+appropriate social conventions across contexts has not yet been 
+developed. To understand why this may be the case, an in-depth 
+literature review of 221 articles on person-following robots was 
+performed, from which 107 are referenced. From these papers, six 
+relevant topics were identiﬁed that shed light on the types of social 
+interactions that have been studied in person-following scenarios: 1) 
+applications; 2) robotic systems; 3) environments; 4) following 
+strategies; 5) human–robot communication; and 6) evaluation methods. 
+Gaps in the existing research on person-following robots were identiﬁed,
+ mainly in addressing social interaction and user needs, noting that 
+only 25 articles reported proper user studies. Human-related, 
+robot-related, task-related, and environment-related factors that are 
+likely to inﬂuence people’s spatial preferences and expectations of a 
+robot’s person-following behavior are then discussed. To guide the 
+design of socially aware person following robots, a user-needs layered 
+design framework that combines the four factor categories is proposed. 
+The framework provides a systematic way to incorporate social 
+considerations in the design of person-following robots. Finally, 
+framework limitations and future challenges in the ﬁeld are presented 
+and discussed.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>12/2018</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://ieeexplore.ieee.org/document/8335753/">https://ieeexplore.ieee.org/document/8335753/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/14/2022, 10:39:59 AM</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>10</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>936-954</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>IEEE Transactions on Cognitive and Developmental Systems</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/TCDS.2018.2825641">10.1109/TCDS.2018.2825641</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>4</td>
+					</tr>
+					<tr>
+					<th>Journal Abbr</th>
+						<td>IEEE Trans. Cogn. Dev. Syst.</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>2379-8920, 2379-8939</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/14/2022, 10:39:59 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/14/2022, 10:39:59 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_7CLUD3JU">Honig et al. - 2018 - Toward Socially Aware Person-Following Robots.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_JS2AHVR8" class="item conferencePaper">
+			<h2>Recent Researches on Human-Aware Navigation for Autonomous System in the Dynamic Environment: An International Survey</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Ha Quang Thinh Ngo</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Phan Cong Vinh</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Abdur Rakib</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The basic instinct of autonomous robot is to navigate in the 
+unstructured environment. In several decades, the human-machine 
+interaction has significantly developed and gained many greater 
+achievements of the interesting fields such as perception, reasoning 
+mechanism, manipulation, learning ability and navigation. In these 
+topics, navigation becomes one of the most attractive studies for 
+investigators to explore. Especially, the novel approached with the 
+constraints of human comfort together with social rules are newly 
+proposed. This paper provides a survey of past and present researches 
+for human-aware navigation framework and synthesizes the potential 
+solutions for the existing challenges in related fields.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2021</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Recent Researches on Human-Aware Navigation for Autonomous System in the Dynamic Environment</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Springer Link</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Cham</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Springer International Publishing</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-3-030-93179-7</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>267-282</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>Context-Aware Systems and Applications</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1007/978-3-030-93179-7_21">10.1007/978-3-030-93179-7_21</a></td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/14/2022, 1:04:12 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/14/2022, 1:04:12 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_BVZ9YB68">Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_2H7A5MEX" class="item journalArticle">
+			<h2>Proactive and social navigation of autonomous vehicles in shared spaces</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Maria Kabtoul</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>251</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/13/2022, 11:06:52 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/21/2022, 11:06:10 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_TPNLC6AM">Kabtoul - Proactive and social navigation of autonomous vehi.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_95B4KC3B" class="item journalArticle">
+			<h2>Prevention and Resolution of Conflicts in Social Navigation -- a Survey</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Reuth Mirsky</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Xuesu Xiao</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Justin Hart</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Peter Stone</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>With the approaching goal of having robots collaborate in 
+shared human-robot environments, navigation in this context becomes both
+ crucial and desirable. Recent developments in robotics have encountered
+ and tackled some of the challenges of navigating in mixed human-robot 
+environments, and in recent years we observe a surge of related work 
+that specifically targets the question of how to handle conflicts 
+between agents in social navigation. These contributions offer models, 
+algorithms, and evaluation metrics, however as this research area is 
+inherently interdisciplinary, many of the relevant papers are not 
+comparable and there is no standard vocabulary between the researchers. 
+The main goal of this survey is to bridge this gap by proposing such a 
+common language, using it to survey existing work, and highlighting open
+ problems. It starts by defining a conflict in social navigation, and 
+offers a detailed taxonomy of its components. This survey then maps 
+existing work while discussing papers using the framing of the proposed 
+taxonomy. Finally, this paper propose some future directions and 
+problems that are currently in the frontier of social navigation to help
+ focus research efforts.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2021-06-22</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>arXiv.org</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://arxiv.org/abs/2106.12113">http://arxiv.org/abs/2106.12113</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/14/2022, 10:06:02 AM</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>arXiv: 2106.12113</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>arXiv:2106.12113 [cs]</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/14/2022, 10:06:02 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/14/2022, 10:06:07 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_TVSKRTV6">arXiv.org Snapshot					</li>
+					<li id="item_W9JU3EXE">arXiv Fulltext PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_J36KKHXV" class="item journalArticle">
+			<h2>From Perception to Navigation in Environments with Persons: An Indoor Evaluation of the State of the Art</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Carlos Medina Sánchez</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Matteo Zella</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jesús Capitán</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Pedro J. Marrón</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Research in the ﬁeld of social robotics is allowing service 
+robots to operate in environments with people. In the aim of realizing 
+the vision of humans and robots coexisting in the same environment, 
+several solutions have been proposed to (1) perceive persons and objects
+ in the immediate environment; (2) predict the movements of humans; as 
+well as (3) plan the navigation in agreement with socially accepted 
+rules. In this work, we discuss the different aspects related to social 
+navigation in the context of our experience in an indoor environment. We
+ describe state-of-the-art approaches and experiment with existing 
+methods to analyze their performance in practice. From this study, we 
+gather ﬁrst-hand insights into the limitations of current solutions and 
+identify possible research directions to address the open challenges. In
+ particular, this paper focuses on topics related to perception at the 
+hardware and application levels, including 2D and 3D sensors, geometric 
+and mainly semantic mapping, the prediction of people trajectories 
+(physics-, pattern- and planning-based), and social navigation (reactive
+ and predictive) in indoor environments.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2022-02-04</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>From Perception to Navigation in Environments with Persons</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.mdpi.com/1424-8220/22/3/1191">https://www.mdpi.com/1424-8220/22/3/1191</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/13/2022, 10:40:20 PM</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>22</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>1191</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>Sensors</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.3390/s22031191">10.3390/s22031191</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>3</td>
+					</tr>
+					<tr>
+					<th>Journal Abbr</th>
+						<td>Sensors</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1424-8220</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/13/2022, 10:40:20 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/13/2022, 10:40:20 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_XX6EHUNA">Medina Sánchez et al. - 2022 - From Perception to Navigation in Environments with.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_EYTE99WB" class="item report">
+			<h2>A Review on Intention-aware and Interaction-aware Trajectory Prediction for Autonomous Vehicles</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Report</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Iago Gomes</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Denis Wolf</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Autonomous vehicles should improve urban transport scenarios, 
+since they use a wide range of components to provide a rich 
+representation of the surroundings and improve driving decision-making. 
+One of these components is the trajectory prediction, which estimate 
+future state of traffic participants and allows predicting hazardous 
+traffic scenarios. There are different approaches for trajectory 
+prediction, in which Intention-aware and Interaction-aware approaches 
+stands for the state-of-art since they use better representation of the 
+surroundings. This paper presents a literature review on intention-aware
+ and interactionaware trajectory prediction, highlighting the techniques
+ applied, dataset, evaluation metrics, and open issues.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2022-3-16</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.techrxiv.org/articles/preprint/A_Review_on_Intention-aware_and_Interaction-aware_Trajectory_Prediction_for_Autonomous_Vehicles/19337447/1">https://www.techrxiv.org/articles/preprint/A_Review_on_Intention-aware_and_Interaction-aware_Trajectory_Prediction_for_Autonomous_Vehicles/19337447/1</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/13/2022, 10:06:42 PM</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>DOI: 10.36227/techrxiv.19337447.v1</td>
+					</tr>
+					<tr>
+					<th>Report Type</th>
+						<td>preprint</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/13/2022, 10:06:42 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/13/2022, 10:06:42 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_Y6FXJWAP">Gomes and Wolf - 2022 - A Review on Intention-aware and Interaction-aware .pdf					</li>
+				</ul>
+			</li>
+
+		</ul>
+	
+</body></html>
