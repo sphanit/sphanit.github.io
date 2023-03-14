@@ -150,6 +150,7 @@ a {
   }
   .header {
     display: inline-flex;
+    /* font-size: 20px; */
     margin-top: -5px;
     margin-bottom: -5px;
     float: center;
@@ -185,6 +186,69 @@ a {
     max-width: 100%;
   }
 }
+
+/* For mobiles */
+@media only screen and (max-width: 480px) {
+  .topnav {
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    /*Side menu colour change on display
+      background-color: #222;*/
+    height: 0;
+    transition: all 0.2s ease;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    z-index: 100;
+  }
+  .topnav_toggleShow {
+    height: 290px;
+  }
+  .toggle_rectangle {
+    height: 250px;
+    border-radius: 10px;
+  }
+  .header {
+    display: inline-flex;
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: -5px;
+    float: left;
+  }
+  .column {
+    width: 100%;
+    background-color: transparent;
+  }
+  .topnav a {
+    color: rgb(148, 148, 148);
+    padding-bottom: 30px;
+
+  }
+  .topnav a:hover {
+    color: rgb(255, 255, 255);
+    border-bottom-width: 0px;
+    text-align: center;
+  }
+  .grids {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .one {
+    grid-row: 1;
+    grid-column: 1/5;
+    margin-left: -40px;
+  }
+  .two {
+    grid-row: 2;
+    grid-column: 1/5;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 @media screen and (min-width: 769px) {
   label.icon {
     display: none;
@@ -199,7 +263,7 @@ input#smenu {
   float: right;
   display: block;
   padding: 20px;
-  right: 10px;
+  right: 5px;
   top: 5px;
   border-radius: 10px;
   transition: all ease 0.3s;
