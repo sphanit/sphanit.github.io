@@ -1,4 +1,3 @@
-# Requirements
+# Usage
+Just update the content in the markdown files to update the pages.
 
-[Jekyll](https://jekyllrb.com/) 
-Bootstrap 5.0
