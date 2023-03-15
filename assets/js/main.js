@@ -1,9 +1,40 @@
+var filePath="content/papers/bibliography.bib";
+
+var bibArray=new Array();
+
 window.addEventListener('load', (event) => {
   console.log("Page loaded.");
+  if(document.URL.includes("research.html")){
+    LoadFile(filePath);
+  }
     if(document.getElementById("smenu").checked == true){
       document.getElementById("smenu").checked = false;
     }
 });
+
+async function LoadFile(filePath) {
+  var result = null;
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("GET", filePath, false);
+  xmlhttp.send();
+  if (xmlhttp.status==200) {
+    result = xmlhttp.responseText;
+  }
+  var arrLines = result.split("@");
+  arrLines.forEach(function (line) {
+      bibArray.push('@'+line);
+  });
+  console.log(bibArray);
+}
+
+function extractBib(s_id){
+  for (var i = 0; i < bibArray.length; i++) {
+    if(bibArray[i].includes(s_id)){
+      mywindow = window.open("", "",);
+      mywindow.document.write("<pre>"+bibArray[i]+"</pre>");
+    }
+  }
+}
 
 window.addEventListener("resize", function() {
   if (window.matchMedia("(min-width: 768px)").matches) {
@@ -74,27 +105,29 @@ function updateBg(){
 }
 
 
-var bibArray=new Array();
+// var bibArray=new Array();
 
-function LoadFile() {
-  var oFrame = document.getElementById("bibfile");
-  var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML.replace(/\r/g, '');
-  var arrLines = strRawContents.split("@");
-  arrLines.forEach(function (line) {
-      bibArray.push('@'+line);
-  });
-  console.log(bibArray);
+// function LoadFile() {
+//   var oFrame = document.getElementById("bibfile");
+//   var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML.replace(/\r/g, '');
+//   var arrLines = strRawContents.split("@");
+//   arrLines.forEach(function (line) {
+//       bibArray.push('@'+line);
+//   });
+//   console.log(bibArray);
+// }
 
-}
 
-function extractBib(s_id){
-  for (var i = 0; i < bibArray.length; i++) {
-    if(bibArray[i].includes(s_id)){
-      mywindow = window.open("", "",);
-      mywindow.document.write("<pre>"+bibArray[i]+"</pre>");
-    }
-  }
-}
+
+
+// function extractBib(s_id){
+//   for (var i = 0; i < bibArray.length; i++) {
+//     if(bibArray[i].includes(s_id)){
+//       mywindow = window.open("", "",);
+//       mywindow.document.write("<pre>"+bibArray[i]+"</pre>");
+//     }
+//   }
+// }
 
 
 
