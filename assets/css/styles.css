@@ -62,21 +62,25 @@ a {
 
 .topnav a:visited {
   text-decoration: none;
-  text-decoration-color: black;
-  border-bottom: 3px solid #000;
 }
 
 .topnav a:hover {
   text-decoration: none;
-  text-decoration-color: black;
   border-bottom: 3px solid #000;
+  border-radius: 0;
+  opacity: 0.6;
+  transition: all 0.15s ease;
 }
 
-.topnav a:active {
-  text-decoration: none;
-  text-decoration-color: black;
-  border-bottom: 3px solid #000;
+.topnav a:hover:after {
+  border-radius: 100%;
 }
+
+.active:link {
+  text-decoration: none;
+  opacity: 0.4;
+}
+
 
 .column {
   float: left;
@@ -162,15 +166,17 @@ a {
     background-color: transparent;
   }
   .topnav a {
-    color: rgb(148, 148, 148);
+    color: rgb(255, 255, 255);
     padding-bottom: 30px;
 
   }
   .topnav a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(148, 148, 148);
     border-bottom-width: 0px;
     text-align: center;
+    opacity: 1.0;
   }
+
   .grids {
     padding-left: 20px;
     padding-right: 20px;
@@ -232,7 +238,14 @@ a {
     color: rgb(255, 255, 255);
     border-bottom-width: 0px;
     text-align: center;
+    opacity: 1.0;
   }
+  .active:link {
+    color: #000;
+    color: rgb(255, 255, 255);
+    opacity: 1.0;
+  }
+  
   .grids {
     padding-left: 20px;
     padding-right: 20px;
