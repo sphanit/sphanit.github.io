@@ -1,3 +1,5 @@
 # Contact details
 
-Email: phaniteja.sp@gmail.com
+Email: ptsingaman@laas.fr (preferred)
+
+LinkedIn: https://www.linkedin.com/in/phaniteja-s/

@@ -45,7 +45,7 @@ function boxChecked() {
  var header = document.getElementById("topheader");
  var main_c = document.getElementById('main-content');
  var name_ = document.getElementById('my-name');
- 
+
   if (checkBox.checked == true){
     name_.style.opacity=0.3;
     main_c.classList.add('overlay');
@@ -74,6 +74,31 @@ function updateBg(){
 }
 
 
+var bibArray=new Array();
+
+function LoadFile() {
+  var oFrame = document.getElementById("bibfile");
+  var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML.replace(/\r/g, '');
+  var arrLines = strRawContents.split("@");
+  arrLines.forEach(function (line) {
+      bibArray.push('@'+line);
+  });
+  console.log(bibArray);
+
+}
+
+function extractBib(s_id){
+  for (var i = 0; i < bibArray.length; i++) {
+    if(bibArray[i].includes(s_id)){
+      mywindow = window.open("", "",);
+      mywindow.document.write("<pre>"+bibArray[i]+"</pre>");
+    }
+  }
+}
+
+
+
+
 // Change Background colour with scroll
 // window.addEventListener('scroll',function(){
 //     var header = document.getElementById("topheader");
@@ -98,4 +123,3 @@ function updateBg(){
 //         header.style.backgroundColor='#ddd';
 //     }
 // });
-

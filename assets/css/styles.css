@@ -4,8 +4,10 @@
 
 html {
   font-family: "Lucida Sans", sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
+button.link{ background:none; border:none; }
 
 .header {
   color: #000000;
