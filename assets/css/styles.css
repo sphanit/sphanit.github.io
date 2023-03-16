@@ -239,7 +239,7 @@ a {
     text-align: center;
     opacity: 1.0;
   }
-  
+
   .grids {
     padding-left: 20px;
     padding-right: 20px;
@@ -349,6 +349,7 @@ label.icon {
   opacity: 0.3;
   width: 100%;
   z-index: 1;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
