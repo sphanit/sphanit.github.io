@@ -176,7 +176,6 @@ a {
     text-align: center;
     opacity: 1.0;
   }
-
   .grids {
     padding-left: 20px;
     padding-right: 20px;
@@ -230,19 +229,14 @@ a {
     background-color: transparent;
   }
   .topnav a {
-    color: rgb(148, 148, 148);
+    color: rgb(255, 255, 255);
     padding-bottom: 30px;
 
   }
   .topnav a:hover {
-    color: rgb(255, 255, 255);
+    color:  rgb(148, 148, 148);
     border-bottom-width: 0px;
     text-align: center;
-    opacity: 1.0;
-  }
-  .active:link {
-    color: #000;
-    color: rgb(255, 255, 255);
     opacity: 1.0;
   }
   
