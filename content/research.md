@@ -1,6 +1,6 @@
 My research mainly concerns the motion planning in robotics, and designing better human-robot interaction strategies. The research stats can be found on my [google scholar](https://scholar.google.com/citations?user=UsDuS10AAAAJ&hl=en&authuser=1).
 
-# Publications and pre-prints
+# Publications
 
 **Combining proactive planning and situation analysis for human-aware robot navigation** (Ph.D. Thesis)   
 Singamaneni, Phani Teja  
