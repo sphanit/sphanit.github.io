@@ -7,7 +7,7 @@ I am a Postdoctoral researcher at [LAAS-CNRS](https://www.laas.fr/public/), curr
 <br>
 
 # News
-March 2023: Joined the [euROBIN project]((https://www.eurobin-project.eu/)) as a Postdoctoral researcher.
+March 2023: Joined the [euROBIN project](https://www.eurobin-project.eu/) as a Postdoctoral researcher.
 
 January 2023: Started a research engineer position at [LAAS-CNRS](https://www.laas.fr/public/).
 
