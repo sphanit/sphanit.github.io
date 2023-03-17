@@ -125,18 +125,18 @@ a {
   background-color: #202020;
   position: fixed;
   top: 65px;
-  right: 0;
+  right: 20px;
   transition: height 0.25s ease;
   height: 0;
   z-index: -10;
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   .topnav {
     flex-direction: column;
     position: absolute;
-    right: 0px;
+    right: 20px;
     top: 0px;
     /*Side menu colour change on display
       background-color: #222;*/
@@ -156,7 +156,6 @@ a {
   }
   .header {
     display: inline-flex;
-    /* font-size: 20px; */
     margin-top: -5px;
     margin-bottom: -5px;
     float: center;
@@ -199,7 +198,7 @@ a {
   .topnav {
     flex-direction: column;
     position: absolute;
-    right: 0px;
+    right: 20px;
     top: 0px;
     /*Side menu colour change on display
       background-color: #222;*/
@@ -271,9 +270,9 @@ input#smenu {
   cursor: pointer;
   float: right;
   display: block;
-  padding: 20px;
+  padding: 23px;
   right: 5px;
-  top: 5px;
+  top: 2px;
   border-radius: 10px;
   transition: all ease 0.3s;
 }
@@ -288,7 +287,7 @@ label.icon {
   background: #000000;
   content: "";
   display: block;
-  height: 2px;
+  height: 3px;
   position: absolute;
   transition: background ease 0.2s, top ease 0.2s 0.2s, transform ease 0.2s;
   width: 20px;
@@ -337,7 +336,8 @@ label.icon {
 
 #smenu:checked + .icon .smenu::before,
 #smenu:checked + .icon .smenu::after {
-  top: 0;
+  top: -2px;
+  right: 2px;
   transition: top ease 0.2s, transform ease 0.2s 0.2s;
 }
 
