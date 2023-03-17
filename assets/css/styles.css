@@ -125,7 +125,7 @@ a {
   background-color: #202020;
   position: fixed;
   top: 65px;
-  right: 20px;
+  right: 10px;
   transition: height 0.25s ease;
   height: 0;
   z-index: -10;
@@ -136,7 +136,7 @@ a {
   .topnav {
     flex-direction: column;
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: 0px;
     /*Side menu colour change on display
       background-color: #222;*/
@@ -198,7 +198,7 @@ a {
   .topnav {
     flex-direction: column;
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: 0px;
     /*Side menu colour change on display
       background-color: #222;*/
