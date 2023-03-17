@@ -123,9 +123,9 @@ a {
 .topnav_rectangle {
   width: 130px;
   background-color: #202020;
-  position: fixed;
-  top: 65px;
-  right: 10px;
+  position: absolute;
+  top: 55px;
+  right: 0px;
   transition: height 0.25s ease;
   height: 0;
   z-index: -10;
