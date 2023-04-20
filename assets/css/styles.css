@@ -2,14 +2,20 @@
   box-sizing: border-box;
 }
 
-@import url('@import url(https://fonts.googleapis.com/css?family=Nunito)');
+/* @import url('https://fonts.googleapis.com/css?family=Nunito'); */
 
-.opensans {
-  font-family: "Nunito", sans-serif;
+@font-face {
+  font-family: Nunito;
+  src: url(http://molugu.com/yantraev/BERTON-VOYAGE-TRIAL.TTF);
+}
+
+
+body {
+  font-family: 'Nunito',sans-serif;
 }
 
 html {
-/*   font-family: 'Lucida Sans', sans-serif; */
+  font-family: 'Nunito', sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
 
