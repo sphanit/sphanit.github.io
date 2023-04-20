@@ -16,6 +16,11 @@ button.link{ background:none; border:none; }
   font-size: 25px;
   text-align: center;
   font-weight: bold;
+  font-family: 'proxima-nova', sans-serif;
+}
+
+.body{
+ font-family: 'proxima-nova', sans-serif;
 }
 
 .header a{
