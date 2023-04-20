@@ -2,20 +2,7 @@
   box-sizing: border-box;
 }
 
-/* @import url('https://fonts.googleapis.com/css?family=Nunito'); */
-
-@font-face {
-  font-family: Nunito;
-  src: url('https://fonts.googleapis.com/css?family=Nunito');
-}
-
-
-body {
-  font-family: 'Nunito',sans-serif;
-}
-
 html {
-  font-family: 'Nunito', sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
 
