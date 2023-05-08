@@ -13,10 +13,12 @@ My interest in robotics was kindled during my Bachelors at [IIIT-Hyderabad](http
 <br>
 
 # News
+April 2023: Our workshop proposal, [Social Robot Navigation: Advances and Evaluation](https://seanavbench23.pages.dev/) got accepted in IROS2023.
+
 March 2023: Joined the [euROBIN project](https://www.eurobin-project.eu/) as a Postdoctoral researcher.
 
 January 2023: Started a research engineer position at [LAAS-CNRS](https://www.laas.fr/public/).
 
 December 2022: Defended my Ph.D. under the supervision of Prof. Rachid Alami. Dissertation title: "[*Combining Proactive Planning and Situation Analysis for Human­Aware Robot Navigation*](./papers/phd_thesis.pdf)"
 
-November 2022: Our paper [*Interactive Social Agents Simulation Tool for Designing Choreographies for Human-Robot-Interaction Research*](./papers/robot_22.pdf) won the best student paper award at the Fifth Iberian Robotics Conference.
+<!-- November 2022: Our paper [*Interactive Social Agents Simulation Tool for Designing Choreographies for Human-Robot-Interaction Research*](./papers/robot_22.pdf) won the best student paper award at the Fifth Iberian Robotics Conference. -->
