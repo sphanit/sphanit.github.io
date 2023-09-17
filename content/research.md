@@ -1,9 +1,9 @@
 
 # Research Profile
 
-[Google scholar](https://scholar.google.com/citations?user=UsDuS10AAAAJ&hl=en&authuser=1) $~~~~~~~~~~~$ [ORCiD](https://orcid.org/0000-0003-4513-8954)
+[Google scholar](https://scholar.google.com/citations?user=UsDuS10AAAAJ&hl=en&authuser=1) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; [ORCiD](https://orcid.org/0000-0003-4513-8954)
 
-[ResearchGate](https://www.researchgate.net/profile/Phani-Singamaneni) $~~~~~~~~~~~~$ [DBLP](https://dblp.org/pid/173/4347.html)  
+[ResearchGate](https://www.researchgate.net/profile/Phani-Singamaneni) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; [DBLP](https://dblp.org/pid/173/4347.html)  
 
 [HAL Publications](https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=Singamaneni&CB_auteur=oui&CB_titre=oui&CB_article=oui&langue=Anglais&tri_exp=annee_publi&tri_exp2=typdoc&tri_exp3=date_publi&ordre_aff=TA&Fen=Aff&css=../css/VisuRubriqueEncadre.css)
 
