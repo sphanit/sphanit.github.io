@@ -13,16 +13,18 @@ My interest in robotics was kindled during my Bachelors at [IIIT-Hyderabad](http
 <br>
 
 # News
-June 2023: Our paper proposing new metrics for social navigation, "*Towards Benchmarking Human-Aware Robot Navigation: A New Perspective and Metrics*", has been accepted in the main track of IEEE RO-MAN, 2023. 
+October 2023: Our IROS 2023 workshop on "[*Social Robot Navigation: Advances and Evaluation*](https://seanavbench23.pages.dev/)" is scheduled on Oct 5 in Detroit, USA.
 
-May 2023: Our paper, "*Adaptive Robot Navigation through Integrated Task and Motion Planning*" has been accepted for [PlanRob](https://icaps23.icaps-conference.org/program/workshops/planrob/) Workshop at ICAPS 2023. 
+August 2023: Our paper proposing new metrics for social navigation, "*[Towards Benchmarking Human-Aware Robot Navigation: A New Perspective and Metrics](./papers/metrics_han_roman23.pdf)*", has been published in the main track of IEEE RO-MAN, 2023.
 
-April 2023: Our workshop proposal, "[*Social Robot Navigation: Advances and Evaluation*](https://seanavbench23.pages.dev/)" got accepted in IROS2023.
+June 2023: The arXiv version on the "*[Principles and guidelines for evaluating social robot navigation algorithms](./papers/pg.pdf)*" is available.
 
-March 2023: Joined the [euROBIN project](https://www.eurobin-project.eu/) as a Postdoctoral researcher.
+May 2023: Our paper, "*[Adaptive Robot Navigation through Integrated Task and Motion Planning](./papers/tamp_planrob23.pdf)*" has been published in [PlanRob](https://icaps23.icaps-conference.org/program/workshops/planrob/) Workshop at ICAPS 2023. 
+
+<!-- March 2023: Joined the [euROBIN project](https://www.eurobin-project.eu/) as a Postdoctoral researcher.
 
 January 2023: Started a research engineer position at [LAAS-CNRS](https://www.laas.fr/public/).
 
 December 2022: Defended my Ph.D. under the supervision of Prof. Rachid Alami. Dissertation title: "[*Combining Proactive Planning and Situation Analysis for Human­Aware Robot Navigation*](./papers/phd_thesis.pdf)"
 
-November 2022: Our paper [*Interactive Social Agents Simulation Tool for Designing Choreographies for Human-Robot-Interaction Research*](./papers/robot_22.pdf) won the best student paper award at the Fifth Iberian Robotics Conference.
+November 2022: Our paper [*Interactive Social Agents Simulation Tool for Designing Choreographies for Human-Robot-Interaction Research*](./papers/robot_22.pdf) won the best student paper award at the Fifth Iberian Robotics Conference. -->
