@@ -23,13 +23,13 @@ Singamaneni, Phani Teja and Umbrico, Alessandro and Orlandini, Andrea and Alami,
 
 **Principles and guidelines for evaluating social robot navigation algorithms** (arXiv version)   
 Francis, Anthony and P{\'e}rez-d'Arpino, Claudia and Li, Chengshu and Xia, Fei and Alahi, Alexandre and Alami, Rachid and Bera, Aniket and Biswas, Abhijat and Biswas, Joydeep and Chandra, Rohan and others  
-arXiv preprint arXiv:2306.16740, 2023  
+*arXiv preprint arXiv:2306.16740, 2023*  
 [<font color='black'>[</font>Document<font color='black'>]</font>](/content/papers/pg.pdf)
 [<a href="javascript:void(0)" onclick="extractBib('francis2023principles')">BibTex</a>]  
 
 **Combining proactive planning and situation analysis for human-aware robot navigation** (Ph.D. Thesis)   
 Singamaneni, Phani Teja  
-Université Paul Sabatier-Toulouse III, 2022  
+*Université Paul Sabatier-Toulouse III, 2022*  
 [<font color='black'>[</font>Document<font color='black'>]</font>](/content/papers/phd_thesis.pdf)
 [<a href="javascript:void(0)" onclick="extractBib('singamaneni2022combining')">BibTex</a>]  
 
@@ -130,8 +130,8 @@ Theerthala, Raghu Ram and Kumar, AVS Sai Bhargav and Babu, Mithun and Phaniteja,
 [<a href="javascript:void(0)" role="button" onclick="extractBib('theerthala2019motion')">BibTex</a>]  
 
 **Learning Multi-Goal Reachability in a Humanoid Robot using Deep Reinforcement Learning** (Masters Thesis)
-Singamaneni, Phaniteja 
-International Institute of Information Technology, Hyderabad (IIIT-H), 2018 
+Singamaneni, Phaniteja  
+*International Institute of Information Technology, Hyderabad (IIIT-H), 2018*   
 [<font color='black'>[</font>Document<font color='black'>]</font>](/content/papers/ms_thesis.pdf)
 [<a href="javascript:void(0)" role="button" onclick="extractBib('singamaneni2018learning')">BibTex</a>]  
 
