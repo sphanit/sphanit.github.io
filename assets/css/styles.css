@@ -23,6 +23,15 @@ button.link{ background:none; border:none; }
   text-decoration-color: #000;
 }
 
+.footer { 
+  color: #888888;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+  padding-top: 25px;
+  z-index: 10;
+}
+
 
 img {
   border-radius: 8px;
@@ -159,6 +168,14 @@ a {
     margin-bottom: -5px;
     float: center;
   }
+
+  .footer { 
+    color: #000;
+    font-size: 14px;
+    display: inline;
+    float: left;
+    z-index: 10;
+  }
   .column {
     width: 100%;
     background-color: transparent;
@@ -222,6 +239,15 @@ a {
     margin-bottom: -5px;
     float: center;
   }
+  
+  .footer { 
+    color: #000;
+    font-size: 14px;
+    display: inline-flex;
+    float: left;
+    z-index: 10;
+  }
+
   .column {
     width: 100%;
     background-color: transparent;
