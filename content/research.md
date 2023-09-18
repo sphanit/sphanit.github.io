@@ -5,7 +5,7 @@
 
 <img src="../assets/img/researchgate.svg" width="25"> [ResearchGate](https://www.researchgate.net/profile/Phani-Singamaneni) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; <img src="../assets/img/dblp.svg" width="25"> [DBLP](https://dblp.org/pid/173/4347.html)  
 
-<img src="../assets/img/hal.svg" width="25"> [HAL Publications](https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=Singamaneni&CB_auteur=oui&CB_titre=oui&CB_article=oui&langue=Anglais&tri_exp=annee_publi&tri_exp2=typdoc&tri_exp3=date_publi&ordre_aff=TA&Fen=Aff&css=../css/VisuRubriqueEncadre.css)
+<img src="../assets/img/hal.svg" width="25"> [HAL Publications](https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=Singamaneni&idHal=phani-sp&NbAffiche=tout&CB_auteur=oui&CB_titre=oui&CB_article=oui&langue=Anglais&tri_exp=annee_publi&tri_exp2=typdoc&ordre_aff=TA&Fen=Aff&css=../css/VisuRubriqueEncadre.css)
 
 # Publications
 
