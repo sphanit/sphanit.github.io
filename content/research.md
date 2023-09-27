@@ -83,7 +83,7 @@ Fourie, Christopher and Figueroa, Nadia and Shah, Julie and Bieńkiewicz, Marta 
 
 **An Intelligent Human Avatar to Debug and Challenge Human-aware Robot Navigation Systems**  
 Favier, Anthony and Singamaneni, Phani Teja and Alami, Rachid  
-*17th ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2022 *  
+*17th ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2022*  
 [<font color='black'>[</font>Document<font color='black'>]</font>](/content/papers/inhus_hri_22.pdf)
 [<a href="javascript:void(0)" role="button" onclick="extractBib('favier2022intelligent')">BibTex</a>]  
 
