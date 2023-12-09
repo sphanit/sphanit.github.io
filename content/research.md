@@ -9,6 +9,12 @@
 
 # Publications
 
+**A Survey on Socially Aware Robot Navigation: Taxonomy and Future Challenges**  
+Phani Teja Singamaneni, Pilar Bachiller-Burgos, Luis J. Manso, Anaís Garrell, Alberto Sanfeliu, Anne Spalanzani, Rachid Alami  
+*arXiv preprint arXiv:2311.06922, 2023*  
+[<font color='black'>[</font>Document<font color='black'>]</font>](/content/papers/survey_2023.pdf)
+[<a href="javascript:void(0)" role="button" onclick="extractBib('singamaneni2023survey')">BibTex</a>]  
+
 **Towards Benchmarking Human-Aware Social Robot Navigation: A New Perspective and Metrics**  
 Singamaneni, Phani Teja and Favier, Anthony and Alami, Rachid  
 *IEEE International Conference on Robot and Human Interactive Communication (RO-MAN), 2023*  
