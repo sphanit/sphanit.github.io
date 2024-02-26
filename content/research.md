@@ -11,7 +11,7 @@
 
 **A Survey on Socially Aware Robot Navigation: Taxonomy and Future Challenges**  
 Phani Teja Singamaneni, Pilar Bachiller-Burgos, Luis J. Manso, Anaís Garrell, Alberto Sanfeliu, Anne Spalanzani, Rachid Alami  
-*arXiv preprint arXiv:2311.06922, 2023*  
+*The International Journal of Robotics Research, 2024*  
 [<font color='black'>[</font>Arxiv Version<font color='black'>]</font>](https://arxiv.org/pdf/2311.06922.pdf)
 [<font color='black'>[</font>Link to Publication<font color='black'>]</font>](https://journals.sagepub.com/doi/10.1177/02783649241230562)
 [<a href="javascript:void(0)" role="button" onclick="extractBib('singamaneni2024survey')">BibTex</a>]  
