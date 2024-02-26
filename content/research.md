@@ -14,7 +14,7 @@ Phani Teja Singamaneni, Pilar Bachiller-Burgos, Luis J. Manso, Anaís Garrell, A
 *arXiv preprint arXiv:2311.06922, 2023*  
 [<font color='black'>[</font>Arxiv Version<font color='black'>]</font>](https://arxiv.org/pdf/2311.06922.pdf)
 [<font color='black'>[</font>Link to Publication<font color='black'>]</font>](https://journals.sagepub.com/doi/10.1177/02783649241230562)
-[<a href="javascript:void(0)" role="button" onclick="extractBib('singamaneni2023survey')">BibTex</a>]  
+[<a href="javascript:void(0)" role="button" onclick="extractBib('singamaneni2024survey')">BibTex</a>]  
 
 **Towards Benchmarking Human-Aware Social Robot Navigation: A New Perspective and Metrics**  
 Singamaneni, Phani Teja and Favier, Anthony and Alami, Rachid  
