@@ -13,13 +13,21 @@ My interest in robotics was kindled during my Bachelors at [IIIT-Hyderabad](http
 <br>
 
 # News
-February 2024: Our survey paper entitled "[*A survey on socially aware robot navigation: Taxonomy and future challenges*](https://journals.sagepub.com/doi/10.1177/02783649241230562)" has been published in the International Journal of Robotics Research. The arXiV version is [*here*](https://arxiv.org/abs/2311.06922). 
+May 2025: We are happy to announce our upcoming version of our workshop on social robot navigation, "[*Advances in Social Navigation: Planning, HRI and Beyond*](https://socialnav2025.pages.dev/) " at ICRA 2025, Atlanta, USA.
 
-October 2023: Our IROS 2023 workshop on "[*Social Robot Navigation: Advances and Evaluation*](https://seanavbench23.pages.dev/)" is scheduled on Oct 5 in Detroit, USA.
+March 2025: Our paper entitled "[*Contextual social navigation through integrated task and motion planning*](https://link.springer.com/chapter/10.1007/978-981-96-3525-2_34) " from ICSR + AI 2024 has been published.
 
-August 2023: Our paper proposing new metrics for social navigation, "*[Towards Benchmarking Human-Aware Robot Navigation: A New Perspective and Metrics](./papers/metrics_han_roman23.pdf)*", has been published in the main track of IEEE RO-MAN, 2023.
+February 2025: Our Journal paper entitled "[*Principles and guidelines for evaluating social robot navigation algorithms*](https://dl.acm.org/doi/10.1145/3700599) " has been pubslished in ACM Transactions on Human-Robot Interaction.
 
-June 2023: The arXiv version on the "*[Principles and guidelines for evaluating social robot navigation algorithms](./papers/pg.pdf)*" is available.
+July 2024: Our new version of workshop on social robot navigation,"[*Unsolved Problems in Social Robot Navigation*](https://unsolvedsocialnav.org/) " is happening on july 19 in Delft, Netherlands.
+
+<!-- February 2024: Our survey paper entitled "[*A survey on socially aware robot navigation: Taxonomy and future challenges*](https://journals.sagepub.com/doi/10.1177/02783649241230562)" has been published in the International Journal of Robotics Research. The arXiV version is [*here*](https://arxiv.org/abs/2311.06922).  -->
+
+<!-- October 2023: Our IROS 2023 workshop on "[*Social Robot Navigation: Advances and Evaluation*](https://seanavbench23.pages.dev/)" is scheduled on Oct 5 in Detroit, USA. -->
+
+<!-- August 2023: Our paper proposing new metrics for social navigation, "*[Towards Benchmarking Human-Aware Robot Navigation: A New Perspective and Metrics](./papers/metrics_han_roman23.pdf)*", has been published in the main track of IEEE RO-MAN, 2023. -->
+
+<!-- June 2023: The arXiv version on the "*[Principles and guidelines for evaluating social robot navigation algorithms](./papers/pg.pdf)*" is available. -->
 
 <!-- May 2023: Our paper, "*[Adaptive Robot Navigation through Integrated Task and Motion Planning](./papers/tamp_planrob23.pdf)*" has been published in [PlanRob](https://icaps23.icaps-conference.org/program/workshops/planrob/) Workshop at ICAPS 2023. 
 
