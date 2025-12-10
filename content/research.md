@@ -9,6 +9,25 @@
 
 # Publications
 
+**Towards Data-Driven Metrics for Social Robot Navigation Benchmarking**  
+Pilar Bachiller-Burgos, Ulysses Bernardet, Luis V Calderita, Pranup Chhetri, Anthony Francis, Noriaki Hirose, Noé Pérez, Dhruv Shah, Phani T Singamaneni, Xuesu Xiao, Luis J Manso  
+*arXiv preprint arXiv:2509.01251, 2025*  
+[<font color='black'>[</font>Arxiv Version<font color='black'>]</font>](https://arxiv.org/pdf/2509.01251) 
+[<a href="javascript:void(0)" onclick="extractBib('bachiller2025towards')">BibTex</a>]  
+
+**Principles and guidelines for evaluating social robot navigation algorithms**  
+Anthony Francis, Claudia Pérez-d’Arpino, Chengshu Li, Fei Xia, Alexandre Alahi, Rachid Alami, Aniket Bera, Abhijat Biswas, Joydeep Biswas, Rohan Chandra, Hao-Tien Lewis Chiang, Michael Everett, Sehoon Ha, Justin Hart, Jonathan P How, Haresh Karnan, Tsang-Wei Edward Lee, Luis J Manso, Reuth Mirsky, Sören Pirk, Phani Teja Singamaneni, Peter Stone, Ada V Taylor, Peter Trautman, Nathan Tsoi, Marynel Vázquez, Xuesu Xiao, Peng Xu, Naoki Yokoyama, Alexander Toshev, Roberto Martín-Martín  
+*ACM Transactions on Human-Robot Interaction, 2025*  
+[<font color='black'>[</font>Arxiv Version<font color='black'>]</font>](/content/papers/pg.pdf)
+[<font color='black'>[</font>Link to Publication<font color='black'>]</font>](https://dl.acm.org/doi/pdf/10.1145/3700599)
+[<a href="javascript:void(0)" onclick="extractBib('francis2025principles')">BibTex</a>]  
+
+**Contextual social navigation through integrated task and motion planning**  
+Phani-Teja Singamaneni, Marcello Tascioni, Alessandro Umbrico, Andrea Orlandini, Rachid Alami  
+*International Conference on Social Robotics, 2024*  
+[<font color='black'>[</font>Document<font color='black'>]</font>](/content/papers/ICSR_2024_tamp.pdf) 
+[<a href="javascript:void(0)" onclick="extractBib('singamaneni2024contextual')">BibTex</a>] 
+
 **A Survey on Socially Aware Robot Navigation: Taxonomy and Future Challenges**  
 Phani Teja Singamaneni, Pilar Bachiller-Burgos, Luis J. Manso, Anaís Garrell, Alberto Sanfeliu, Anne Spalanzani, Rachid Alami  
 *The International Journal of Robotics Research, 2024*  
@@ -28,12 +47,6 @@ Singamaneni, Phani Teja and Umbrico, Alessandro and Orlandini, Andrea and Alami,
 [<font color='black'>[</font>Document<font color='black'>]</font>](/content/papers/tamp_planrob23.pdf)
 [<a href="javascript:void(0)" role="button" onclick="extractBib('singamaneni2023adaptive')">BibTex</a>]  
 
-**Principles and guidelines for evaluating social robot navigation algorithms** (arXiv version)   
-Francis, Anthony and P{\'e}rez-d'Arpino, Claudia and Li, Chengshu and Xia, Fei and Alahi, Alexandre and Alami, Rachid and Bera, Aniket and Biswas, Abhijat and Biswas, Joydeep and Chandra, Rohan and others  
-*arXiv preprint arXiv:2306.16740, 2023*  
-[<font color='black'>[</font>Document<font color='black'>]</font>](/content/papers/pg.pdf)
-[<a href="javascript:void(0)" onclick="extractBib('francis2023principles')">BibTex</a>]  
-
 **Combining proactive planning and situation analysis for human-aware robot navigation** (Ph.D. Thesis)   
 Singamaneni, Phani Teja  
 *Université Paul Sabatier-Toulouse III, 2022*  
@@ -43,7 +56,7 @@ Singamaneni, Phani Teja
 **Towards Enhancing Social Navigation through Contextual and Human-related Knowledge**  
 Singamaneni, Phani Teja and Umbrico, Alessandro and Orlandini, Andrea and Alami, Rachid  
 *International Conference on Social Robotics Workshop: ALTRUIST, 2022*  
-[<font color='black'>[</font>Document<font color='black'>]</font>](/content/papers/icsr_workshop_altruist_22.pdf)
+[<font color='black'>[</font>ArXiv version<font color='black'>]</font>](/content/papers/icsr_workshop_altruist_22.pdf)
 [<a href="javascript:void(0)" role="button" onclick="extractBib('singamaneni2022towards')">BibTex</a>]  
 
 **Interactive Social Agents Simulation Tool for Designing Choreographies for Human-Robot-Interaction Research**  

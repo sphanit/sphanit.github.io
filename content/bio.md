@@ -1,10 +1,11 @@
-I am a Postdoctoral researcher at [LAAS-CNRS](https://www.laas.fr/public/) and my expertise lies in the fields of human-robot interaction and motion planning. Currently, I am contributing my knowledge and skills to the [euROBIN project](https://www.eurobin-project.eu/), which focuses on providing better softwares for human-robot interaction.
+I am a Postdoctoral researcher at [INRIA](https://www.inria.fr/maintenance/maintenance.html?appli=www.inria.fr) in [HUCEBOT](https://team.inria.fr/hucebot/team/phani-teja-singamaneni/) Team, working on Human-aware motion planning. I specialize in human-aware motion planning, optimal control of mobile robots, HRI for navigation and had experience on RL for motion planning, robot design and whole-body motion planning of humanoids.
 
-During my Ph.D. at LAAS, I had the opportunity to delve deeper into the field of human-aware social robot navigation and was involved in the development of an open-source human-aware navigation stack. Before that, during my Masters at [IIIT-Hyderabad](https://www.iiit.ac.in/), I worked closely with humanoid robots, where I explored planning stable manipulation trajectories based on reinforcement learning.
+Before joining INRIA, I was at [LAAS-CNRS](https://www.laas.fr/public/) where I persued his Ph.D. and continued as a Postdoc working on socially aware robot navigation and the development of a ROS software stack for the same as a part [euROBIN project](https://www.eurobin-project.eu/). I am an active member of socially aware robot navigation community organizing workshops and collaborating on new projects.
 
-My interest in robotics was kindled during my Bachelors at [IIIT-Hyderabad](https://www.iiit.ac.in/), where I was an active member of the robotics club and participated in various competitions. Since then, I have been passionately pursuing my interest in the field of robotics and their interactions with humans.
+I received my Masters and Bachelors from [IIIT-Hyderabad](https://www.iiit.ac.in/) and was part of [Robotics Research Center (RRC)](https://robotics.iiit.ac.in/). During this time, I worked on robot modelling and design, trajectory planning using RL and humanoid robots. I was also an intern at Uurmi (later acquired by Mathworks) where I worked on a controller for Autonomous Car project. 
 
-<!-- I am a Postdoctoral researcher at [LAAS-CNRS](https://www.laas.fr/public/), currently working on the [euROBIN project](https://www.eurobin-project.eu/). My primary areas of research are human-robot interaction and motion planning. I have been exploring the field of human-aware social robot navigation during my Ph.D. at LAAS and contributed to the development of an open-source human-aware navigation stack. Prior to [LAAS-CNRS](https://www.laas.fr/public/), I worked closely with humanoid robots during my Masters at [IIIT-Hyderabad](https://www.iiit.ac.in/), where I worked on planning stable manipulation trajectories based on reinforcement learning. I have always been an active member of the robotics club and participated in competitions during my Bachelors at [IIIT-Hyderabad](https://www.iiit.ac.in/) and it kindled my interest to pursue the field of robotics and their interactions with humans further. -->
+My interest in robotics was kindled during my Bachelors, where I was an active member of the robotics club and participated in various competitions. Since then, I have been passionately pursuing my interest in the field of robotics and their interactions with humans.
+
 
 <br>
 <br>
@@ -13,13 +14,17 @@ My interest in robotics was kindled during my Bachelors at [IIIT-Hyderabad](http
 <br>
 
 # News
-May 2025: We are happy to announce our upcoming version of our workshop on social robot navigation, "[*Advances in Social Navigation: Planning, HRI and Beyond*](https://socialnav2025.pages.dev/) " at ICRA 2025, Atlanta, USA.
+Oct 2025: Started a new position as Postdoc in [HUCEBOT](https://team.inria.fr/hucebot/team/phani-teja-singamaneni/) Team at INRIA, Nancy, under the supervision of Dr. Serena Ivaldi.
 
-March 2025: Our paper entitled "[*Contextual social navigation through integrated task and motion planning*](https://link.springer.com/chapter/10.1007/978-981-96-3525-2_34) " from ICSR + AI 2024 has been published.
+Aug 2025: Our proposal on [Computational Intelligence in Social and Human Aspects of Robot Navigation](https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/27131) got accepted for the seminar at the prestigious [Schloss Dagstuhl - Leibniz Center for Informatics](https://www.dagstuhl.de/en).
+
+May 2025: We have successfully completed our workshop on social robot navigation, "[*Advances in Social Navigation: Planning, HRI and Beyond*](https://socialnav2025.pages.dev/) " at ICRA 2025, Atlanta, USA. Thank you for all the attendees!
+
+<!--March 2025: Our paper entitled "[*Contextual social navigation through integrated task and motion planning*](https://link.springer.com/chapter/10.1007/978-981-96-3525-2_34) " from ICSR + AI 2024 has been published.
 
 February 2025: Our Journal paper entitled "[*Principles and guidelines for evaluating social robot navigation algorithms*](https://dl.acm.org/doi/10.1145/3700599) " has been pubslished in ACM Transactions on Human-Robot Interaction.
 
-July 2024: Our new version of workshop on social robot navigation,"[*Unsolved Problems in Social Robot Navigation*](https://unsolvedsocialnav.org/) " is happening on july 19 in Delft, Netherlands.
+July 2024: Our new version of workshop on social robot navigation,"[*Unsolved Problems in Social Robot Navigation*](https://unsolvedsocialnav.org/) " is happening on july 19 in Delft, Netherlands. -->
 
 <!-- February 2024: Our survey paper entitled "[*A survey on socially aware robot navigation: Taxonomy and future challenges*](https://journals.sagepub.com/doi/10.1177/02783649241230562)" has been published in the International Journal of Robotics Research. The arXiV version is [*here*](https://arxiv.org/abs/2311.06922).  -->
 
