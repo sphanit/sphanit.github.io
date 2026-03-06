@@ -9,6 +9,26 @@
 
 # Publications
 
+**Crowd-FM: Learned Optimal Selection of Conditional Flow Matching-generated Trajectories for Crowd Navigation**  
+Antareep Singha, Laksh Nanwani, Mathai Mathew P., Samkit Jain, Phani Teja Singamaneni, Arun Kumar Singh, K. Madhava Krishna  
+International Conference on Robotics and Automation (ICRA), 2026  
+[<font color='black'>[</font>Document<font color='black'>]</font>](https://arxiv.org/abs/2602.06698) 
+[<font color='black'>[</font>Video<font color='black'>]</font>]() 
+
+
+**Bi<sup>3</sup>: A Biplatform, Bicultural, Biperson Dataset for Social Robot Navigation**  
+Andrew Stratton, Phani Teja Singamaneni, Pranav Goyal, Rachid Alami, and Christoforos Mavrogiannis  
+International Conference on Robotics and Automation (ICRA), 2026  
+[<font color='black'>[</font>Document<font color='black'>]</font>]() 
+[<font color='black'>[</font>Video<font color='black'>]</font>]() 
+
+**How Human Motion Prediction Quality Shapes Social Robot Navigation Performance in Constrained Spaces**  
+Andrew Stratton, Phani Teja Singamaneni, Pranav Goyal, Rachid Alami, and Christoforos Mavrogiannis  
+ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2026  
+[<font color='black'>[</font>Document<font color='black'>]</font>](https://arxiv.org/pdf/2601.09856)
+[<font color='black'>[</font>Video<font color='black'>]</font>](https://youtube.com/watch?v=QGd5vQMhXqY&feature=youtu.be) 
+
+
 **Towards Data-Driven Metrics for Social Robot Navigation Benchmarking**  
 Pilar Bachiller-Burgos, Ulysses Bernardet, Luis V Calderita, Pranup Chhetri, Anthony Francis, Noriaki Hirose, Noé Pérez, Dhruv Shah, Phani T Singamaneni, Xuesu Xiao, Luis J Manso  
 *arXiv preprint arXiv:2509.01251, 2025*  

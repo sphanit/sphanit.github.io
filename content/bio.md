@@ -14,11 +14,19 @@ My interest in robotics was kindled during my Bachelors, where I was an active m
 <br>
 
 # News
-Oct 2025: Started a new position as Postdoc in [HUCEBOT](https://team.inria.fr/hucebot/team/phani-teja-singamaneni/) Team at INRIA, Nancy, under the supervision of Dr. Serena Ivaldi.
 
-Aug 2025: Our proposal on [Computational Intelligence in Social and Human Aspects of Robot Navigation](https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/27131) got accepted for the seminar at the prestigious [Schloss Dagstuhl - Leibniz Center for Informatics](https://www.dagstuhl.de/en).
+**January 2026**: 2 papers got accepted for ICRA 2026.  
+(1) [*Bi<sup>3</sup> : A Biplatform, Bicultural, Biperson Dataset for Social Robot Navigation*](https://fluentrobotics.com/bi3dataset/)  
+(2) [*Crowd-FM: Learned Optimal Selection of Conditional Flow
+Matching-generated Trajectories for Crowd Navigation*](https://arxiv.org/abs/2602.06698)
 
-May 2025: We have successfully completed our workshop on social robot navigation, "[*Advances in Social Navigation: Planning, HRI and Beyond*](https://socialnav2025.pages.dev/) " at ICRA 2025, Atlanta, USA. Thank you for all the attendees!
+December 2025: Our user study entitled ["*How Human Motion Prediction Quality Shapes Social Robot Navigation Performance in Constrained Spaces*"](https://fluentrobotics.com/pred2nav/) has been accepted as full paper for HRI 2026 Conference in Edinburgh, UK.
+
+October 2025: Started a new position as Postdoc in [HUCEBOT](https://team.inria.fr/hucebot/team/phani-teja-singamaneni/) Team at INRIA, Nancy, under the supervision of Dr. Serena Ivaldi.
+
+<!-- Aug 2025: Our proposal on [Computational Intelligence in Social and Human Aspects of Robot Navigation](https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/27131) got accepted for the seminar at the prestigious [Schloss Dagstuhl - Leibniz Center for Informatics](https://www.dagstuhl.de/en). -->
+
+<!-- May 2025: We have successfully completed our workshop on social robot navigation, "[*Advances in Social Navigation: Planning, HRI and Beyond*](https://socialnav2025.pages.dev/) " at ICRA 2025, Atlanta, USA. Thank you for all the attendees! -->
 
 <!--March 2025: Our paper entitled "[*Contextual social navigation through integrated task and motion planning*](https://link.springer.com/chapter/10.1007/978-981-96-3525-2_34) " from ICSR + AI 2024 has been published.
 
